@@ -1,14 +1,22 @@
 <div class="container mx-auto">
-  <div class="flex flex-col md:flex-row">
-    <div class="w-full md:w-1/2">
+  <div class="flex flex-col md:flex-row h-screen">
+    <div class="w-full md:w-1/2 my-auto">
+      <div class="text-3xl bold-text text-center">
+        <span
+          class="bg-clip-text text-transparent bg-gradient-to-r to-gray-500 from-violet-500"
+        >
+          Welcome !
+        </span>
+      </div>
       <img
         src="assets\images\login.JPG"
         alt="Login Image"
-        class="mx-auto"
-        style="width: 100%; max-width: 450px"
+        class="mx-auto left-container-img bg-cover bg-center"
       />
     </div>
-    <div class="w-full md:w-1/2 flex justify-center items-center">
+    <div
+      class="w-full md:w-1/2 flex justify-center items-center login-container-bg"
+    >
       <div class="text-center">
         <h1 class="bold-text flex">
           <div class="svg-icon-size">
@@ -32,15 +40,16 @@
 
           <div class="brand-name">Edu<span class="sync-color">Sync</span></div>
         </h1>
-        <div class="text-center">
+        <div class="text-center my-12">
           <a href="#" class="regular-text login-btn py-2 inline-block">
             Login
           </a>
-
-          <div class="signup-content__line-break">
-            <div class="divider"></div>
-            <div class="signup-content__or">or</div>
+          <div class="text-center flex items-center ml-12">
+            <hr class="border-gray-400 w-1/4 mx-2" />
+            <div class="py-2 inline-block">or</div>
+            <hr class="border-gray-400 w-1/4 mx-2" />
           </div>
+
           <a href="#" class="register-btn font-bold py-2 inline-block">
             Register
           </a>
