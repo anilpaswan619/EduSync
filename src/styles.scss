@@ -114,9 +114,16 @@ a:hover {
 }
 .login-container-bg {
   background-color: #c0acf52b;
-  border-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
 }
 .left-container-img {
   width: 100%;
   max-width: 450px;
+}
+
+@media screen and (max-width: 767px) {
+  .login-container-bg {
+    border-radius: 2rem;
+  }
 }
