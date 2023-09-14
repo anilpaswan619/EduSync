@@ -11,7 +11,8 @@ export class LoginComponent {
   showParentForm = false;
 
   toggleParentForm() {
-    this.showParentForm = !this.showParentForm;
+    this.showParentForm = true;
     this.buttonClicked = true;
+    this.showButtons = false;
   }
 }
