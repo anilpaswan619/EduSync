@@ -53,8 +53,17 @@
           <div class="brand-name">Edu<span class="sync-color">Sync</span></div>
         </h1>
         <div class="text-center my-12">
-          <a href="#" class="regular-text login-btn py-2 inline-block">
+          <a
+            *ngIf="!buttonClicked"
+            (click)="showButtons = true; buttonClicked = true"
+            class="regular-text login-btn py-2 inline-block"
+          >
             Login
+          </a>
+          <a *ngIf="showButtons" class="transition-transform transform scale-0">
+            <p class="regular-text py-2 inline-block">Parent</p>
+            <p class="regular-text py-2 inline-block">Teacher</p>
+            <p class="regular-text py-2 inline-block">Student</p>
           </a>
           <div class="text-center flex items-center ml-12">
             <hr class="border-gray-400 w-1/4 mx-2" />
@@ -62,9 +71,7 @@
             <hr class="border-gray-400 w-1/4 mx-2" />
           </div>
 
-          <a href="#" class="register-btn font-bold py-2 inline-block">
-            Register
-          </a>
+          <a href="#" class="register-btn py-2 inline-block"> Register </a>
         </div>
       </div>
     </div>
