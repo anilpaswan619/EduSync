@@ -30,7 +30,7 @@
 
     <div class="w-full md:w-1/2 flex justify-center items-center">
       <div class="text-center login-container-screen">
-        <h1 class="bold-text flex">
+        <h1 class="bold-text flex justify-center">
           <div class="svg-icon-size">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +136,7 @@
             </button>
           </div>
 
-          <div class="mt-20">
+          <div class="mt-16">
             <button
               class="regular-text back-btn py-2 px-4 flex items-center bg-gray-200 text-gray-700 hover:bg-gray-300 hover:text-gray-800 rounded-lg mx-auto"
               (click)="showButtons = false; buttonClicked = false"
@@ -160,48 +160,90 @@
             </button>
           </div>
         </a>
-        <div *ngIf="showParentForm" class="mt-8">
-          <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-            <div class="mb-4">
-              <label
-                class="block text-gray-700 text-sm font-bold mb-2"
-                for="email"
+        <div *ngIf="showParentForm">
+          <div
+            class="flex min-h-full flex-col justify-center px-6 lg:px-8 regular-text"
+          >
+            <div class="sm:mx-auto sm:w-full sm:max-w-sm mt-8">
+              <h2
+                class="text-center font-bold leading-9 tracking-tight text-gray-900"
               >
-                Email
-              </label>
-              <input
-                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="email"
-                type="email"
-                placeholder="Email"
-              />
+                Sign in to your account
+              </h2>
             </div>
-            <div class="mb-6">
-              <label
-                class="block text-gray-700 text-sm font-bold mb-2"
-                for="password"
-              >
-                Password
-              </label>
-              <input
-                class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-                id="password"
-                type="password"
-                placeholder="Password"
-              />
-              <p class="text-red-500 text-xs italic">
-                Please choose a password.
+
+            <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-sm">
+              <form class="space-y-6" action="#" method="POST">
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-medium leading-6 text-gray-900 text-left"
+                    >Email address</label
+                  >
+                  <div class="mt-2">
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      autocomplete="email"
+                      required
+                      class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex items-center justify-between">
+                    <label
+                      for="password"
+                      class="block text-sm font-medium leading-6 text-gray-900"
+                      >Password</label
+                    >
+                  </div>
+                  <div class="mt-2">
+                    <input
+                      id="password"
+                      name="password"
+                      type="password"
+                      autocomplete="current-password"
+                      required
+                      class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    />
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="text-sm text-gray-600">
+                    <input
+                      id="remember-me"
+                      name="remember-me"
+                      type="checkbox"
+                      class=""
+                    /><label for="remember-me" class="">Remember me</label>
+                  </div>
+                  <div class="px-3 mt-forget-password">
+                    <a href="#" class="font-semibold text-sm text-indigo-600"
+                      >Forgot password?</a
+                    >
+                  </div>
+                </div>
+                <div>
+                  <button
+                    type="submit"
+                    class="flex w-full justify-center rounded-md bg-indigo-600 hover:bg-indigo-700 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  >
+                    Sign in
+                  </button>
+                </div>
+              </form>
+
+              <p class="mt-10 text-center text-sm text-gray-500">
+                Not a member?
+                <a href="#" class="font-semibold leading-6 text-indigo-600"
+                  >Register</a
+                >
               </p>
             </div>
-            <div class="flex items-center justify-between">
-              <button
-                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                type="button"
-              >
-                Sign In
-              </button>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
