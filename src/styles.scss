@@ -49,18 +49,7 @@
   --text-color4: #8d8d8d;
   --text-color5: #e8e8e8;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 8px 0;
-}
 
-p {
-  margin: 0;
-}
 a,
 a:visited,
 a:hover {
@@ -87,12 +76,12 @@ a:hover {
   font-weight: 300;
 }
 .svg-icon-size {
-  width: 3.5rem;
-  height: 3.5rem;
-  margin-right: 0.8rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  margin-right: 0.6rem;
 }
 .brand-name {
-  font-size: 2.7rem;
+  font-size: 2.1rem;
 }
 .login-btn {
   background-color: var(--primary-color);
@@ -114,16 +103,21 @@ a:hover {
 }
 .login-container-bg {
   background-color: #c0acf52b;
-  border-bottom-left-radius: 2rem;
-  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
 }
 .left-container-img {
   width: 100%;
   max-width: 450px;
 }
+.login-container-screen {
+  border-radius: 1rem;
+  padding: 4rem;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
 
 @media screen and (max-width: 767px) {
   .login-container-bg {
-    border-radius: 2rem;
+    border-radius: 1rem;
   }
 }
