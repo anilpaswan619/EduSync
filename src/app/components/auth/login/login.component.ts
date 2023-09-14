@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 export class LoginComponent {
   showButtons = false;
   buttonClicked = false;
+  showParentForm = false;
+
+  toggleParentForm() {
+    this.showParentForm = !this.showParentForm;
+    this.buttonClicked = true;
+  }
 }
