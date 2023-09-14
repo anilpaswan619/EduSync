@@ -69,7 +69,14 @@
           <a href="#" class="register-btn py-2 inline-block"> Register </a>
         </div>
         <a *ngIf="showButtons" class="transition-transform transform">
-          <div class="my-6 mt-16">
+          <div class="sm:mx-auto sm:w-full sm:max-w-sm mt-8 regular-text">
+            <h2
+              class="text-center font-bold leading-9 tracking-tight text-gray-900"
+            >
+              Select your account
+            </h2>
+          </div>
+          <div class="my-6 mt-10">
             <button
               class="regular-text parent-btn py-2 flex"
               (click)="toggleParentForm()"
