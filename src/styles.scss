@@ -129,4 +129,14 @@ a:hover {
   .login-container-bg {
     border-radius: 1rem;
   }
+  .left-container-style {
+    border-radius: 0;
+  }
+  .login-container-bg {
+    background-color: white;
+  }
+  .login-container-screen {
+    border-radius: 0;
+    box-shadow: none;
+  }
 }
