@@ -126,6 +126,11 @@ a:hover {
   padding: 6rem;
   box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
 }
+.register-container-screen {
+  border-radius: 1rem;
+  padding: 3rem;
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
 .transition-transform {
   transition: transform 0.3s ease-in-out;
   transform-origin: top;
@@ -180,6 +185,11 @@ a:hover {
 .mt-forget-password {
   margin-top: 6px;
 }
+.registration-form-container {
+  max-height: 100vh;
+  overflow-y: auto;
+  padding: 3rem;
+}
 
 @media screen and (max-width: 767px) {
   .login-container-bg {
@@ -195,5 +205,17 @@ a:hover {
     border-radius: 0;
     box-shadow: none;
     padding: 2.5rem;
+  }
+  .register-container-screen {
+    border-radius: 0;
+    padding: 1rem;
+    box-shadow: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .registration-form-container {
+    padding: 0;
+    max-height: 100vh;
+    overflow-y: unset;
   }
 }

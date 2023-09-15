@@ -62,7 +62,9 @@
             <hr class="border-gray-400 w-1/4 mx-2" />
           </div>
 
-          <a href="#" class="register-btn py-2 inline-block"> Register </a>
+          <a routerLink="/register" class="register-btn py-2 inline-block">
+            Register
+          </a>
         </div>
         <a *ngIf="showButtons" class="transition-transform transform">
           <div class="sm:mx-auto sm:w-full sm:max-w-sm mt-8 regular-text">
@@ -235,3 +237,4 @@
     </div>
   </div>
 </div>
+<router-outlet></router-outlet>

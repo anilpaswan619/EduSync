@@ -1,1 +1,223 @@
-<p>register works!</p>
+<div class="mx-auto">
+  <div class="flex flex-col md:flex-row h-screen login-container-bg">
+    <div
+      class="flex items-center justify-center w-full md:w-1/2 my-auto left-container-style"
+    >
+      <div>
+        <div
+          class="text-3xl bold-text text-center flex items-center justify-center flex-wrap"
+        >
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-r to-gray-500 from-violet-500"
+          >
+            Welcome To
+          </span>
+          <h1 class="bold-text flex justify-center ml-2">
+            <div class="svg-icon-size">
+              <img src="/assets/icons/edu.svg" />
+            </div>
+
+            <div class="brand-name">
+              Edu<span class="sync-color">Sync</span>
+            </div>
+          </h1>
+        </div>
+        <img
+          src="assets\images\login.JPG"
+          alt="Login Image"
+          class="mx-auto left-container-img bg-cover bg-center"
+        />
+        <div class="thin-text text-center py-4">
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-r to-gray-500 from-violet-500 font-normal"
+          >
+            "EduSync" is a comprehensive education management platform designed
+            to foster seamless communication and collaboration between parents,
+            teachers, and students.
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full md:w-1/2 flex justify-center items-center">
+      <div class="registration-form-container">
+        <div class="text-center register-container-screen">
+          <h1 class="bold-text flex justify-center items-center">
+            <div class="svg-icon-size">
+              <img src="/assets/icons/edu.svg" />
+            </div>
+
+            <div class="brand-name">
+              Edu<span class="sync-color">Sync</span>
+            </div>
+          </h1>
+
+          <div>
+            <div
+              class="flex min-h-full flex-col justify-center px-6 lg:px-8 regular-text"
+            >
+              <div class="sm:mx-auto sm:w-full sm:max-w-sm mt-8">
+                <h2
+                  class="justify-center font-bold leading-9 tracking-tight text-gray-900 flex items-center flex-wrap"
+                >
+                  Sign up for the account
+
+                  <div>
+                    <img src="/assets/icons/signup.svg" class="h-6 w-6 ml-2" />
+                  </div>
+                </h2>
+              </div>
+
+              <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-sm">
+                <form class="space-y-6" action="#" method="POST">
+                  <div>
+                    <label
+                      for="email"
+                      class="block text-sm font-medium leading-6 text-gray-900 text-left"
+                      >Full Name</label
+                    >
+                    <div class="mt-2">
+                      <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        autocomplete="email"
+                        required
+                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label
+                      for="email"
+                      class="block text-sm font-medium leading-6 text-gray-900 text-left"
+                      >Email address</label
+                    >
+                    <div class="mt-2">
+                      <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        autocomplete="email"
+                        required
+                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="flex items-center justify-between">
+                      <label
+                        for="password"
+                        class="block text-sm font-medium leading-6 text-gray-900"
+                        >Password</label
+                      >
+                    </div>
+                    <div class="mt-2">
+                      <input
+                        id="password"
+                        name="password"
+                        type="password"
+                        autocomplete="current-password"
+                        required
+                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex items-center justify-between">
+                      <label
+                        for="password"
+                        class="block text-sm font-medium leading-6 text-gray-900"
+                        >Confirm Password</label
+                      >
+                    </div>
+                    <div class="mt-2">
+                      <input
+                        id="password"
+                        name="password"
+                        type="password"
+                        autocomplete="current-password"
+                        required
+                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label
+                      for="email"
+                      class="block text-sm font-medium leading-6 text-gray-900 text-left"
+                      >Account Type</label
+                    >
+                    <div class="mt-2">
+                      <select
+                        id="accountType"
+                        name="accountType"
+                        class="block w-full rounded-md border-0 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                        required
+                      >
+                        <option value="" disabled selected>
+                          Select an account type
+                        </option>
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="parent">Parent</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="flex justify-center flex-wrap items-center">
+                    <div class="text-sm text-gray-600 mt-forget-password">
+                      <input
+                        id="remember-me"
+                        name="remember-me"
+                        type="checkbox"
+                        class=""
+                        required
+                      /><label for="remember-me" class="ml-1"
+                        >I agree to the
+                        <a href="#" class="text-indigo-600 hover:underline"
+                          >Terms of Service</a
+                        >
+                        and
+                        <a href="#" class="text-indigo-600 hover:underline"
+                          >Privacy Policy</a
+                        >
+                      </label>
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      type="submit"
+                      class="flex w-full justify-center rounded-md bg-indigo-600 hover:bg-indigo-700 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    >
+                      Sign up
+                    </button>
+                  </div>
+                </form>
+
+                <p class="mt-10 text-center text-sm text-gray-500">
+                  Already have an account?
+                  <a
+                    routerLink="/login"
+                    class="font-semibold leading-6 text-indigo-600"
+                    >Login</a
+                  >
+                </p>
+                <div class="mt-10">
+                  <button
+                    class="regular-text mx-auto text-sm back-btn py-2 px-4 flex items-center bg-gray-200 text-gray-700 hover:bg-gray-300 hover:text-gray-800 rounded-lg"
+                    routerLink="/login"
+                  >
+                    <img src="/assets/icons/back.svg " class="h-4 w-4" />
+
+                    <span>Back</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
