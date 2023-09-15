@@ -205,6 +205,9 @@ a:hover {
 .scroll-container::-webkit-scrollbar-thumb:hover {
   background-color: var(--primary-color);
 }
+.password-input-field {
+  width: 15rem;
+}
 
 @media screen and (max-width: 767px) {
   .login-container-bg {
