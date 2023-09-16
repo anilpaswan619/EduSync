@@ -7,7 +7,7 @@ import { ForgetPasswordComponent } from './components/auth/forget-password/forge
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent }, 
-  {path: 'password', component: ForgetPasswordComponent }, 
+  {path: 'forget-password', component: ForgetPasswordComponent }, 
   { path: '', redirectTo: '/login', pathMatch: 'full' },
 ];
 
