@@ -180,13 +180,13 @@ a:hover {
 }
 
 .scroll-container::-webkit-scrollbar {
-  width: 2px;
+  width: 6px;
 }
 .scroll-container::-webkit-scrollbar-track {
-  background-color: transparent;
+  background-color: var(--tertiary-color);
 }
 .scroll-container::-webkit-scrollbar-thumb {
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-color);
   border: 2px solid transparent;
   border-radius: 8px;
 }
