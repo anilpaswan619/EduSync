@@ -57,6 +57,12 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
 }
+.link-color {
+  color: var(--text-color2) !important;
+}
+.link-color:hover {
+  color: white !important;
+}
 
 .sync-color {
   color: var(--primary-color);
@@ -84,6 +90,7 @@ a:hover {
 .brand-name {
   font-size: 2.1rem;
   margin-top: 4px;
+  color: black;
 }
 .login-btn {
   background-color: var(--primary-color);

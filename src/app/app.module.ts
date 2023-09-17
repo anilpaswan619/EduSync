@@ -7,6 +7,8 @@ import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ForgetPasswordComponent } from './components/auth/forget-password/forget-password.component';
+import { HeaderComponent } from './components/header/header.component';
+import { LeftNavComponent } from './components/left-nav/left-nav.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ForgetPasswordComponent } from './components/auth/forget-password/forge
     LoginComponent,
     RegisterComponent,
     DashboardComponent,
-    ForgetPasswordComponent
+    ForgetPasswordComponent,
+    HeaderComponent,
+    LeftNavComponent
   ],
   imports: [
     BrowserModule,
