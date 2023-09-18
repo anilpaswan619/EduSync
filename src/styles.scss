@@ -3,16 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Poppins";
-  src: url("assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
-  font-style: normal;
+html,
+body {
+  height: 100%;
 }
 .body {
   @font-face {
     font-family: "Poppins";
     src: url("assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
     font-style: normal;
+    margin: 0;
   }
 
   box-sizing: border-box;

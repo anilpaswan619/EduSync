@@ -9,6 +9,10 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ForgetPasswordComponent } from './components/auth/forget-password/forget-password.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LeftNavComponent } from './components/left-nav/left-nav.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatIconModule} from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [
@@ -18,11 +22,15 @@ import { LeftNavComponent } from './components/left-nav/left-nav.component';
     DashboardComponent,
     ForgetPasswordComponent,
     HeaderComponent,
-    LeftNavComponent
+    LeftNavComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
