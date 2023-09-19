@@ -12,6 +12,7 @@ import { LeftNavComponent } from './components/left-nav/left-nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatIconModule} from '@angular/material/icon';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import {MatIconModule} from '@angular/material/icon';
     ForgetPasswordComponent,
     HeaderComponent,
     LeftNavComponent,
+    HomeComponent,
     
   ],
   imports: [
