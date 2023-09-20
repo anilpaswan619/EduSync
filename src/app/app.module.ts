@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { ForgetPasswordComponent } from './components/auth/forget-password/forget-password.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LeftNavComponent } from './components/left-nav/left-nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -21,7 +20,6 @@ import { HomeComponent } from './components/home/home.component';
     LoginComponent,
     RegisterComponent,
     DashboardComponent,
-    ForgetPasswordComponent,
     HeaderComponent,
     LeftNavComponent,
     HomeComponent,

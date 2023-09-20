@@ -1,0 +1,136 @@
+<div class="mx-auto">
+  <div class="flex flex-col md:flex-row h-screen login-container-bg">
+    <div
+      class="flex items-center justify-center w-full md:w-1/2 my-auto left-container-style"
+    >
+      <div>
+        <div
+          class="text-3xl bold-text text-center flex items-center justify-center flex-wrap"
+        >
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-r to-gray-500 from-violet-500"
+          >
+          </span>
+          <h1 class="bold-text flex justify-center ml-2">
+            <div class="svg-icon-size">
+              <img src="/assets/icons/edu.svg" />
+            </div>
+
+            <div class="brand-name">
+              Edu<span class="sync-color">Sync</span>
+            </div>
+          </h1>
+        </div>
+        <img
+          src="assets\images\login.JPG"
+          alt="Login Image"
+          class="mx-auto left-container-img bg-cover bg-center"
+        />
+        <div class="thin-text text-center py-4">
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-r to-gray-500 from-violet-500 font-normal"
+          >
+            "EduSync" is a comprehensive education management platform designed
+            to foster seamless communication and collaboration between parents,
+            teachers, and students.
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full md:w-1/2 flex justify-center items-center">
+      <div class="text-center login-container-screen">
+        <h1 class="bold-text flex justify-center items-center">
+          <div class="svg-icon-size">
+            <img src="/assets/icons/edu.svg" />
+          </div>
+
+          <div class="brand-name">Edu<span class="sync-color">Sync</span></div>
+        </h1>
+        <div class="text-center my-12" *ngIf="!buttonClicked">
+          <a
+            (click)="showButtons = true; buttonClicked = true"
+            class="regular-text login-btn py-2 inline-block"
+          >
+            Login
+          </a>
+
+          <div class="text-center justify-center flex items-center">
+            <hr class="border-gray-400 w-12 mx-2" />
+            <div class="py-2 inline-block">or</div>
+            <hr class="border-gray-400 w-12 mx-2" />
+          </div>
+
+          <a routerLink="/register" class="register-btn py-2 inline-block">
+            Register
+          </a>
+        </div>
+        <a
+          *ngIf="!showLogin && showButtons"
+          class="transition-transform transform"
+        >
+          <div class="sm:mx-auto sm:w-full sm:max-w-sm mt-8 regular-text">
+            <h2
+              class="text-center font-bold leading-9 tracking-tight text-gray-900 flex items-center justify-center flex-wrap"
+            >
+              Select Account Type to Sign In
+              <img src="/assets/icons/group.svg " class="h-6 w-6 ml-2" />
+            </h2>
+          </div>
+          <div class="my-6 mt-10">
+            <button
+              class="regular-text parent-btn py-2 flex"
+              (click)="showLogin = true"
+            >
+              <img src="/assets/icons/parent.svg " class="h-6 w-6 mr-2" />
+              Parent
+            </button>
+          </div>
+          <div class="my-6">
+            <button
+              class="regular-text teacher-btn py-2 flex"
+              (click)="showLogin = true"
+            >
+              <img src="/assets/icons/teacher.svg " class="h-6 w-6 mr-2" />
+              Teacher
+            </button>
+          </div>
+          <div class="my-6">
+            <button
+              class="regular-text student-btn py-2 flex"
+              (click)="showLogin = true"
+            >
+              <img src="/assets/icons/student.svg " class="h-6 w-6 mr-2" />
+              Student
+            </button>
+          </div>
+          <div class="mt-14">
+            <button
+              (click)="buttonClicked = false; showButtons = false"
+              class="regular-text mx-auto text-sm back-btn py-2 px-4 flex items-center bg-gray-200 text-gray-700 hover:bg-gray-300 hover:text-gray-800 rounded-lg"
+            >
+              <img src="/assets/icons/back.svg " class="h-4 w-4" />
+              <span>Back</span>
+            </button>
+          </div>
+        </a>
+
+        <div *ngIf="showLogin">
+          <app-login></app-login>
+        </div>
+
+        <div class="mt-14" *ngIf="showLogin">
+          <button
+            class="regular-text mx-auto text-sm back-btn py-2 px-4 flex items-center bg-gray-200 text-gray-700 hover:bg-gray-300 hover:text-gray-800 rounded-lg"
+            (click)="showLogin = !true"
+          >
+            <img src="/assets/icons/back.svg " class="h-4 w-4" />
+            <span>Back</span>
+          </button>
+        </div>
+
+        <div *ngIf="showRegForm"></div>
+      </div>
+    </div>
+  </div>
+</div>
