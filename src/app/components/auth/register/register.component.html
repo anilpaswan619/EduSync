@@ -50,8 +50,58 @@
               Edu<span class="sync-color">Sync</span>
             </div>
           </h1>
-
-          <div>
+          <a *ngIf="showButtons" class="transition-transform transform">
+            <div class="sm:mx-auto sm:w-full sm:max-w-sm mt-8 regular-text">
+              <h2
+                class="text-center font-bold leading-9 tracking-tight text-gray-900 flex items-center justify-center"
+              >
+                Select Account Type to Sign Up
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  fontIcon="group_add"
+                  class="ml-2"
+                ></mat-icon>
+              </h2>
+            </div>
+            <div class="my-6 mt-10">
+              <button
+                class="regular-text parent-btn py-2 flex"
+                (click)="toggleRegForm()"
+              >
+                <img src="/assets/icons/parent.svg " class="h-6 w-6 mr-2" />
+                Parent
+              </button>
+            </div>
+            <div class="my-6">
+              <button
+                class="regular-text teacher-btn py-2 flex"
+                (click)="toggleRegForm()"
+              >
+                <img src="/assets/icons/teacher.svg " class="h-6 w-6 mr-2" />
+                Teacher
+              </button>
+            </div>
+            <div class="my-6">
+              <button
+                class="regular-text student-btn py-2 flex"
+                (click)="toggleRegForm()"
+              >
+                <img src="/assets/icons/student.svg " class="h-6 w-6 mr-2" />
+                Student
+              </button>
+            </div>
+            <div class="mt-14">
+              <button
+                routerLink="/home"
+                class="regular-text mx-auto text-sm back-btn py-2 px-4 flex items-center text-gray-700 hover:bg-gray-200 hover:text-gray-800 rounded-lg"
+              >
+                <img src="/assets/icons/back.svg " class="h-4 w-4" />
+                <span>Back</span>
+              </button>
+            </div>
+          </a>
+          <div *ngIf="showRegForm">
             <div
               class="flex min-h-full flex-col justify-center px-6 lg:px-8 regular-text"
             >
@@ -67,145 +117,148 @@
                 </h2>
               </div>
 
-              <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-sm">
-                <form class="space-y-6" action="#" method="POST">
-                  <div>
-                    <label
-                      for="email"
-                      class="block text-sm font-medium leading-6 text-gray-900 text-left"
-                      >Full Name</label
-                    >
-                    <div class="mt-2">
-                      <input
-                        id="email"
-                        name="email"
-                        type="email"
-                        autocomplete="email"
-                        required
-                        class="outline-none px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label
-                      for="email"
-                      class="block text-sm font-medium leading-6 text-gray-900 text-left"
-                      >Email address</label
-                    >
-                    <div class="mt-2">
-                      <input
-                        id="email"
-                        name="email"
-                        type="email"
-                        autocomplete="email"
-                        required
-                        class="outline-none px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                      />
-                    </div>
-                  </div>
+              <div class="mt-8">
+                <ng-container [ngSwitch]="stepperOrientation | async">
+                  <div *ngSwitchCase="'horizontal'" class="p-2"></div>
+                  <div *ngSwitchCase="'vertical'"></div>
+                </ng-container>
 
-                  <div>
-                    <div class="flex items-center justify-between">
-                      <label
-                        for="password"
-                        class="block text-sm font-medium leading-6 text-gray-900"
-                        >Password</label
-                      >
-                    </div>
-                    <div class="mt-2">
-                      <input
-                        id="password"
-                        name="password"
-                        type="password"
-                        autocomplete="current-password"
-                        required
-                        class="outline-none px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <div class="flex items-center justify-between">
-                      <label
-                        for="password"
-                        class="block text-sm font-medium leading-6 text-gray-900"
-                        >Confirm Password</label
-                      >
-                    </div>
-                    <div class="mt-2">
-                      <input
-                        id="password"
-                        name="password"
-                        type="password"
-                        autocomplete="current-password"
-                        required
-                        class="outline-none px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label
-                      for="email"
-                      class="block text-sm font-medium leading-6 text-gray-900 text-left"
-                      >Account Type</label
-                    >
-                    <div class="mt-3">
-                      <select
-                        id="accountType"
-                        name="accountType"
-                        class="outline-none px-2 block w-full rounded-md border-0 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                        required
-                      >
-                        <option value="" disabled selected>
-                          Select an account type
-                        </option>
-                        <option value="teacher">Teacher</option>
-                        <option value="parent">Parent</option>
-                        <option value="student">Student</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="flex justify-center flex-wrap items-center">
-                    <div class="text-sm text-gray-600 mt-forget-password">
-                      <input
-                        id="remember-me"
-                        name="remember-me"
-                        type="checkbox"
-                        class=""
-                        required
-                      /><label for="remember-me" class="ml-1"
-                        >I agree to the
-                        <a href="#" class="text-indigo-600 hover:underline"
-                          >Terms of Service</a
-                        >
-                        and
-                        <a href="#" class="text-indigo-600 hover:underline"
-                          >Privacy Policy</a
-                        >
-                      </label>
-                    </div>
-                  </div>
-                  <div>
-                    <button
-                      type="submit"
-                      class="flex w-full justify-center rounded-md bg-indigo-600 hover:bg-indigo-700 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                    >
-                      Sign up
-                    </button>
-                  </div>
-                </form>
+                <mat-stepper
+                  class="example-stepper rounded-lg"
+                  [orientation]="(stepperOrientation | async)!"
+                >
+                  <mat-step
+                    [stepControl]="firstFormGroup"
+                    label="Family Details"
+                  >
+                    <form [formGroup]="firstFormGroup">
+                      <mat-form-field>
+                        <mat-label>Last Name, First Name</mat-label>
+                        <input
+                          matInput
+                          placeholder="Last name, First name"
+                          formControlName="firstCtrl"
+                          required
+                        />
+                      </mat-form-field>
+                      <mat-form-field>
+                        <mat-label>Email</mat-label>
+                        <input
+                          matInput
+                          placeholder="Email address"
+                          formControlName="emailCtrl"
+                          required
+                        />
+                      </mat-form-field>
+                      <mat-form-field>
+                        <mat-label>Password</mat-label>
+                        <input
+                          matInput
+                          placeholder="Password"
+                          formControlName="passwordCtrl"
+                          required
+                        />
+                      </mat-form-field>
+                      <div>
+                        <button mat-button matStepperNext>Next</button>
+                      </div>
+                    </form>
+                  </mat-step>
+                  <mat-step
+                    [stepControl]="secondFormGroup"
+                    label="Children Details"
+                  >
+                    <form [formGroup]="secondFormGroup">
+                      <mat-form-field>
+                        <mat-label>Address</mat-label>
+                        <input
+                          matInput
+                          formControlName="secondCtrl"
+                          placeholder="Ex. 1 Main St, New York, NY"
+                          required
+                        />
+                      </mat-form-field>
+                      <mat-form-field>
+                        <mat-label>Child's Name</mat-label>
+                        <input
+                          matInput
+                          placeholder="Child's name"
+                          formControlName="childNameCtrl"
+                          required
+                        />
+                      </mat-form-field>
+                      <mat-form-field>
+                        <mat-label>Class</mat-label>
+                        <input
+                          matInput
+                          placeholder="Class"
+                          formControlName="classCtrl"
+                          required
+                        />
+                      </mat-form-field>
+                      <div>
+                        <button mat-button matStepperPrevious>Back</button>
+                        <button mat-button matStepperNext>Next</button>
+                      </div>
+                    </form>
+                  </mat-step>
+                  <mat-step [stepControl]="thirdFormGroup" label="Address">
+                    <form [formGroup]="thirdFormGroup">
+                      <mat-form-field>
+                        <mat-label>Phone number</mat-label>
+                        <input
+                          matInput
+                          formControlName="thirdCtrl"
+                          placeholder="Ex. 12345678"
+                          required
+                        />
+                      </mat-form-field>
+                      <mat-form-field>
+                        <mat-label>City</mat-label>
+                        <input
+                          matInput
+                          formControlName="cityCtrl"
+                          placeholder="City"
+                          required
+                        />
+                      </mat-form-field>
+                      <mat-form-field>
+                        <mat-label>Country</mat-label>
+                        <input
+                          matInput
+                          placeholder="Country"
+                          formControlName="countryCtrl"
+                          required
+                        />
+                      </mat-form-field>
+                      <div>
+                        <button mat-button matStepperPrevious>Back</button>
+                      </div>
+                    </form>
+                  </mat-step>
+                  <!-- Add more mat-step elements as needed -->
+                </mat-stepper>
+                <div>
+                  <button
+                    type="submit"
+                    class="flex w-full justify-center rounded-md bg-indigo-600 hover:bg-indigo-700 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  >
+                    Sign up
+                  </button>
+                </div>
 
-                <p class="mt-10 text-center text-sm text-gray-500">
+                <p class="pt-4 text-center text-sm text-gray-500">
                   Already have an account?
                   <a
-                    routerLink="/login"
+                    routerLink="/home"
                     class="font-semibold leading-6 text-indigo-600"
                     >Login</a
                   >
                 </p>
                 <div class="mt-10">
                   <button
-                    class="regular-text mx-auto text-sm back-btn py-2 px-4 flex items-center bg-gray-200 text-gray-700 hover:bg-gray-300 hover:text-gray-800 rounded-lg"
-                    routerLink="/login"
+                    class="regular-text mx-auto text-sm back-btn py-2 px-4 flex items-center text-gray-700 hover:bg-gray-200 hover:text-gray-800 rounded-lg"
+                    routerLink="/home"
                   >
                     <img src="/assets/icons/back.svg " class="h-4 w-4" />
 

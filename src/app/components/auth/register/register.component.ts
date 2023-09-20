@@ -1,4 +1,10 @@
 import { Component } from '@angular/core';
+import {FormBuilder, Validators, FormGroup, FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {BreakpointObserver} from '@angular/cdk/layout';
+import {StepperOrientation, MatStepperModule} from '@angular/material/stepper';
+import {Observable} from 'rxjs';
+import {map} from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-register',
@@ -6,5 +12,36 @@ import { Component } from '@angular/core';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
+  showButtons = true;
+  showRegForm = false;
 
+
+  toggleRegForm() {
+    this.showRegForm = true;
+    this.showButtons = false;
+
+  }
+ 
+  firstFormGroup = this._formBuilder.group({
+    firstCtrl: ['', Validators.required],
+    emailCtrl: ['', [Validators.required, Validators.email]],
+    passwordCtrl: ['', Validators.required],
+  });
+  secondFormGroup = this._formBuilder.group({
+    secondCtrl: ['', Validators.required],
+    childNameCtrl: ['', Validators.required],
+    classCtrl: ['', Validators.required],
+  });
+  thirdFormGroup = this._formBuilder.group({
+    thirdCtrl: ['', Validators.required],
+    cityCtrl: ['', Validators.required],
+    countryCtrl: ['', Validators.required],
+  });
+  stepperOrientation: Observable<StepperOrientation>;
+
+  constructor(private _formBuilder: FormBuilder, breakpointObserver: BreakpointObserver) {
+    this.stepperOrientation = breakpointObserver
+      .observe('(min-width: 1100px)')
+      .pipe(map(({matches}) => (matches ? 'horizontal' : 'vertical')));
+  }
 }
