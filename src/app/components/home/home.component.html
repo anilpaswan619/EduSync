@@ -74,7 +74,12 @@
               class="text-center font-bold leading-9 tracking-tight text-gray-900 flex items-center justify-center flex-wrap"
             >
               Select Account Type to Sign In
-              <img src="/assets/icons/group.svg " class="h-6 w-6 ml-2" />
+              <mat-icon
+                aria-hidden="false"
+                aria-label="Example home icon"
+                fontIcon="group"
+                class="ml-2"
+              ></mat-icon>
             </h2>
           </div>
           <div class="my-6 mt-10">
@@ -107,7 +112,7 @@
           <div class="mt-14">
             <button
               (click)="buttonClicked = false; showButtons = false"
-              class="regular-text mx-auto text-sm back-btn py-2 px-4 flex items-center bg-gray-200 text-gray-700 hover:bg-gray-300 hover:text-gray-800 rounded-lg"
+              class="regular-text mx-auto text-sm back-btn py-2 px-4 flex items-center text-gray-700 hover:bg-gray-200 hover:text-gray-800 rounded-lg"
             >
               <img src="/assets/icons/back.svg " class="h-4 w-4" />
               <span>Back</span>
@@ -121,7 +126,7 @@
 
         <div class="mt-14" *ngIf="showLogin">
           <button
-            class="regular-text mx-auto text-sm back-btn py-2 px-4 flex items-center bg-gray-200 text-gray-700 hover:bg-gray-300 hover:text-gray-800 rounded-lg"
+            class="regular-text mx-auto text-sm back-btn py-2 px-4 flex items-center text-gray-700 hover:bg-gray-200 hover:text-gray-800 rounded-lg"
             (click)="showLogin = !true"
           >
             <img src="/assets/icons/back.svg " class="h-4 w-4" />
