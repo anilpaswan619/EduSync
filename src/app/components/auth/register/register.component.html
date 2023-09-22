@@ -133,10 +133,10 @@
                   >
                     <form [formGroup]="firstFormGroup">
                       <mat-form-field>
-                        <mat-label>Last Name, First Name</mat-label>
+                        <mat-label>First Name, Last Name</mat-label>
                         <input
                           matInput
-                          placeholder="Last name, First name"
+                          placeholder="First name, Last name"
                           formControlName="firstCtrl"
                           required
                         />
@@ -168,6 +168,24 @@
                           required
                         />
                       </mat-form-field>
+                      <mat-form-field>
+                        <mat-label>Family ID</mat-label>
+                        <input
+                          matInput
+                          placeholder="Family ID"
+                          formControlName="familyIDCtrl"
+                          required
+                        />
+                      </mat-form-field>
+                      <mat-form-field>
+                        <mat-label>Occupation</mat-label>
+                        <input
+                          matInput
+                          placeholder="Occupation"
+                          formControlName="occupationCtrl"
+                          required
+                        />
+                      </mat-form-field>
                       <div>
                         <button mat-button matStepperNext>Next</button>
                       </div>
@@ -179,16 +197,16 @@
                   >
                     <form [formGroup]="secondFormGroup">
                       <mat-form-field>
-                        <mat-label>Address</mat-label>
+                        <mat-label>First name, Last name</mat-label>
                         <input
                           matInput
                           formControlName="secondCtrl"
-                          placeholder="Ex. 1 Main St, New York, NY"
+                          placeholder="First name, Last name"
                           required
                         />
                       </mat-form-field>
                       <mat-form-field>
-                        <mat-label>Child's Name</mat-label>
+                        <mat-label>Class ID</mat-label>
                         <input
                           matInput
                           placeholder="Child's name"
@@ -197,10 +215,10 @@
                         />
                       </mat-form-field>
                       <mat-form-field>
-                        <mat-label>Class</mat-label>
+                        <mat-label>Any Medication</mat-label>
                         <input
                           matInput
-                          placeholder="Class"
+                          placeholder="Any Medication Details"
                           formControlName="classCtrl"
                           required
                         />
@@ -209,8 +227,26 @@
                         <mat-label>Age</mat-label>
                         <input
                           matInput
-                          placeholder="Age"
+                          placeholder="How old he/she is?"
                           formControlName="ageCtrl"
+                          required
+                        />
+                      </mat-form-field>
+                      <mat-form-field>
+                        <mat-label>ITS Number</mat-label>
+                        <input
+                          matInput
+                          formControlName="itsNumberCtrl"
+                          placeholder="ITS Number"
+                          required
+                        />
+                      </mat-form-field>
+                      <mat-form-field>
+                        <mat-label>Grade</mat-label>
+                        <input
+                          matInput
+                          formControlName="gradeCtrl"
+                          placeholder="Grade"
                           required
                         />
                       </mat-form-field>
@@ -223,11 +259,11 @@
                   <mat-step [stepControl]="thirdFormGroup" label="Address">
                     <form [formGroup]="thirdFormGroup">
                       <mat-form-field>
-                        <mat-label>Phone number</mat-label>
+                        <mat-label>Address</mat-label>
                         <input
                           matInput
                           formControlName="thirdCtrl"
-                          placeholder="Ex. 12345678"
+                          placeholder="Ex. 1 Main St, New York, NY"
                           required
                         />
                       </mat-form-field>
@@ -258,12 +294,30 @@
                           required
                         />
                       </mat-form-field>
+                      <mat-form-field>
+                        <mat-label>Phone Number</mat-label>
+                        <input
+                          matInput
+                          formControlName="phoneCtrl"
+                          placeholder="Ex. 12345678"
+                          required
+                        />
+                      </mat-form-field>
+                      <mat-form-field>
+                        <mat-label>Work Email</mat-label>
+                        <input
+                          matInput
+                          formControlName="workEmailCtrl"
+                          placeholder="Work Email"
+                          required
+                        />
+                      </mat-form-field>
                       <div>
                         <button mat-button matStepperPrevious>Back</button>
+                        <button mat-button>Save</button>
                       </div>
                     </form>
                   </mat-step>
-                  <!-- Add more mat-step elements as needed -->
                 </mat-stepper>
                 <div>
                   <button
