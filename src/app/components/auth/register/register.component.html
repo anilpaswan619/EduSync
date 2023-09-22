@@ -132,7 +132,7 @@
                     label="Family Details"
                   >
                     <form [formGroup]="firstFormGroup">
-                      <mat-form-field>
+                      <mat-form-field class="reg-field-m">
                         <mat-label>First Name, Last Name</mat-label>
                         <input
                           matInput
@@ -141,7 +141,7 @@
                           required
                         />
                       </mat-form-field>
-                      <mat-form-field>
+                      <mat-form-field class="reg-field-m">
                         <mat-label>Email</mat-label>
                         <input
                           matInput
@@ -150,7 +150,7 @@
                           required
                         />
                       </mat-form-field>
-                      <mat-form-field>
+                      <mat-form-field class="reg-field-m">
                         <mat-label>Password</mat-label>
                         <input
                           matInput
@@ -159,7 +159,7 @@
                           required
                         />
                       </mat-form-field>
-                      <mat-form-field>
+                      <mat-form-field class="reg-field-m">
                         <mat-label>Confirm Password</mat-label>
                         <input
                           matInput
@@ -168,7 +168,7 @@
                           required
                         />
                       </mat-form-field>
-                      <mat-form-field>
+                      <mat-form-field class="reg-field-m">
                         <mat-label>Family ID</mat-label>
                         <input
                           matInput
@@ -177,7 +177,7 @@
                           required
                         />
                       </mat-form-field>
-                      <mat-form-field>
+                      <mat-form-field class="reg-field-m">
                         <mat-label>Occupation</mat-label>
                         <input
                           matInput
@@ -196,7 +196,7 @@
                     label="Children Details"
                   >
                     <form [formGroup]="secondFormGroup">
-                      <mat-form-field>
+                      <mat-form-field class="reg-field-m">
                         <mat-label>First name, Last name</mat-label>
                         <input
                           matInput
@@ -205,7 +205,7 @@
                           required
                         />
                       </mat-form-field>
-                      <mat-form-field>
+                      <mat-form-field class="reg-field-m">
                         <mat-label>Class ID</mat-label>
                         <input
                           matInput
@@ -214,7 +214,7 @@
                           required
                         />
                       </mat-form-field>
-                      <mat-form-field>
+                      <mat-form-field class="reg-field-m">
                         <mat-label>Any Medication</mat-label>
                         <input
                           matInput
@@ -223,7 +223,7 @@
                           required
                         />
                       </mat-form-field>
-                      <mat-form-field>
+                      <mat-form-field class="reg-field-m">
                         <mat-label>Age</mat-label>
                         <input
                           matInput
@@ -232,7 +232,7 @@
                           required
                         />
                       </mat-form-field>
-                      <mat-form-field>
+                      <mat-form-field class="reg-field-m">
                         <mat-label>ITS Number</mat-label>
                         <input
                           matInput
@@ -241,7 +241,7 @@
                           required
                         />
                       </mat-form-field>
-                      <mat-form-field>
+                      <mat-form-field class="reg-field-m">
                         <mat-label>Grade</mat-label>
                         <input
                           matInput
@@ -258,7 +258,7 @@
                   </mat-step>
                   <mat-step [stepControl]="thirdFormGroup" label="Address">
                     <form [formGroup]="thirdFormGroup">
-                      <mat-form-field>
+                      <mat-form-field class="reg-field-m">
                         <mat-label>Address</mat-label>
                         <input
                           matInput
@@ -267,7 +267,7 @@
                           required
                         />
                       </mat-form-field>
-                      <mat-form-field>
+                      <mat-form-field class="reg-field-m">
                         <mat-label>City</mat-label>
                         <input
                           matInput
@@ -276,7 +276,7 @@
                           required
                         />
                       </mat-form-field>
-                      <mat-form-field>
+                      <mat-form-field class="reg-field-m">
                         <mat-label>State</mat-label>
                         <input
                           matInput
@@ -285,7 +285,7 @@
                           required
                         />
                       </mat-form-field>
-                      <mat-form-field>
+                      <mat-form-field class="reg-field-m">
                         <mat-label>Country</mat-label>
                         <input
                           matInput
@@ -294,7 +294,7 @@
                           required
                         />
                       </mat-form-field>
-                      <mat-form-field>
+                      <mat-form-field class="reg-field-m">
                         <mat-label>Phone Number</mat-label>
                         <input
                           matInput
@@ -303,7 +303,7 @@
                           required
                         />
                       </mat-form-field>
-                      <mat-form-field>
+                      <mat-form-field class="reg-field-m">
                         <mat-label>Work Email</mat-label>
                         <input
                           matInput
@@ -314,16 +314,13 @@
                       </mat-form-field>
                       <div>
                         <button mat-button matStepperPrevious>Back</button>
-                        <button mat-button>Save</button>
+                        <button mat-button color="primary">Save</button>
                       </div>
                     </form>
                   </mat-step>
                 </mat-stepper>
                 <div>
-                  <button
-                    type="submit"
-                    class="flex w-full justify-center rounded-md bg-indigo-600 hover:bg-indigo-700 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                  >
+                  <button mat-raised-button class="btn-sign-up w-60 font-bold">
                     Sign up
                   </button>
                 </div>

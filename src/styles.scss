@@ -200,12 +200,17 @@ a:hover {
 .scroll-container::-webkit-scrollbar-thumb:hover {
   background-color: var(--primary-color);
 }
-.example-stepper {
-  margin-top: 8px;
-}
 
 .mat-mdc-form-field {
   margin-top: 16px;
+}
+.reg-field-m {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.btn-sign-up {
+  background-color: var(--primary-color) !important;
+  color: white !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -230,6 +235,10 @@ a:hover {
   }
   .register-mt-8 {
     margin-top: 2rem;
+  }
+  .reg-field-m {
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
 }
 @media screen and (max-width: 767px) {
