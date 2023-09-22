@@ -209,6 +209,7 @@ a:hover {
 .btn-sign-up {
   background-color: var(--primary-color) !important;
   color: white !important;
+  padding: 1.3rem !important;
 }
 .example-section {
   display: flex;
@@ -219,6 +220,15 @@ a:hover {
 
 .example-margin {
   margin: 0 10px;
+}
+
+.example-card {
+  max-width: 330px;
+}
+
+.example-header-image {
+  background-image: url("assets/images/teacher.JPG");
+  background-size: cover;
 }
 
 @media screen and (max-width: 767px) {
@@ -247,6 +257,9 @@ a:hover {
   .reg-field-m {
     margin-left: 0rem;
     margin-right: 0rem;
+  }
+  .btn-logout {
+    display: none;
   }
 }
 @media screen and (max-width: 767px) {

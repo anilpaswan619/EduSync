@@ -21,6 +21,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {NgSwitch, NgSwitchCase, AsyncPipe} from '@angular/common';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -50,6 +51,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatButtonModule,
     AsyncPipe,
     MatCheckboxModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

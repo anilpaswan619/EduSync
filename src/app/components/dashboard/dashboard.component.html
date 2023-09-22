@@ -10,9 +10,37 @@
     <div *ngIf="userRole === 'teacher'">
       <header class="bg-white shadow mb-8">
         <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-          <h1 class="text-2xl font-bold tracking-tight text-gray-900">
-            Welcome To Dashboard !
+          <h1
+            class="text-2xl font-bold tracking-tight text-gray-900 text-center"
+          >
+            Welcome To Dashboard!
           </h1>
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Sezuka Inu</mat-card-title>
+              <mat-card-subtitle>Student</mat-card-subtitle>
+            </mat-card-header>
+            <img
+              mat-card-image
+              src="assets/images/teacher.JPG"
+              alt="Photo of a Shiba Inu"
+            />
+            <mat-card-content>
+              <p class="text-justify py-3">
+                Welcome To the Dashboard, Sezuka Inu. Now you can explore your
+                online study resources and other student related activities.
+              </p>
+            </mat-card-content>
+            <mat-card-actions class="flex justify-between items-center">
+              <button mat-raised-button mat-button color="warn">
+                <mat-icon>favorite</mat-icon> LIKE
+              </button>
+              <button mat-raised-button mat-button color="primary">
+                SHARE <mat-icon>share</mat-icon>
+              </button>
+            </mat-card-actions>
+          </mat-card>
         </div>
       </header>
       <main>
