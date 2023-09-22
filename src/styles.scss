@@ -178,9 +178,7 @@ a:hover {
 .text-indigo-600:hover {
   color: #3c1cca !important;
 }
-.mt-forget-password {
-  margin-top: 6px;
-}
+
 .registration-form-container {
   max-height: 100vh;
   overflow-y: auto;
@@ -211,6 +209,16 @@ a:hover {
 .btn-sign-up {
   background-color: var(--primary-color) !important;
   color: white !important;
+}
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.example-margin {
+  margin: 0 10px;
 }
 
 @media screen and (max-width: 767px) {

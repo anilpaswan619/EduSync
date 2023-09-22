@@ -11,6 +11,7 @@ export class LoginComponent {
   isParentClicked = false;
   isStudentClicked = false;
   isTeacherClicked = false;
+  checked = false;
 
   toggleParentForm() {
   

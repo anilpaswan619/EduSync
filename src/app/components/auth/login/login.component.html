@@ -61,14 +61,16 @@
         </div>
         <div class="flex justify-center flex-wrap items-center">
           <div class="text-sm text-gray-600 mt-forget-password">
-            <input
-              id="remember-me"
-              name="remember-me"
-              type="checkbox"
-              class=""
-            /><label for="remember-me" class="ml-1">Remember me</label>
+            <section class="example-section">
+              <mat-checkbox
+                class="example-margin"
+                color="primary"
+                [(ngModel)]="checked"
+                >Remember me</mat-checkbox
+              >
+            </section>
           </div>
-          <div class="px-3 mt-forget-password">
+          <div class="px-3">
             <a
               (click)="showPasswordForm = true; showRegForm = true"
               class="font-semibold text-sm text-indigo-600 whitespace-nowrap"

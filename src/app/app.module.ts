@@ -20,6 +20,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {NgSwitch, NgSwitchCase, AsyncPipe} from '@angular/common';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import {NgSwitch, NgSwitchCase, AsyncPipe} from '@angular/common';
     MatInputModule,
     MatButtonModule,
     AsyncPipe,
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
