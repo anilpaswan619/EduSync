@@ -26,15 +26,18 @@ export class RegisterComponent {
     firstCtrl: ['', Validators.required],
     emailCtrl: ['', [Validators.required, Validators.email]],
     passwordCtrl: ['', Validators.required],
+    confirmPasswordCtrl: ['', Validators.required],
   });
   secondFormGroup = this._formBuilder.group({
     secondCtrl: ['', Validators.required],
     childNameCtrl: ['', Validators.required],
     classCtrl: ['', Validators.required],
+    ageCtrl: ['', Validators.required],
   });
   thirdFormGroup = this._formBuilder.group({
     thirdCtrl: ['', Validators.required],
     cityCtrl: ['', Validators.required],
+    stateCtrl: ['', Validators.required],
     countryCtrl: ['', Validators.required],
   });
   stepperOrientation: Observable<StepperOrientation>;
