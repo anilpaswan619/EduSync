@@ -1,15 +1,17 @@
 <div class="flex login-container-bg regular-text">
-  <div class="w-64 h-screen bg-gray-900 text-white fixed top-0 left-0">
+  <div
+    class="w-64 h-screen bg-gray-900 text-white fixed top-0 left-0 hidden md:block"
+  >
     <app-left-nav></app-left-nav>
   </div>
 
-  <div class="flex-grow p-8 pt-4 flex flex-col ml-64">
-    <app-header class="mb-8 self-end"></app-header>
+  <div class="flex-grow p-8 pt-4 flex flex-col ml-0 md:ml-64">
+    <app-header class="mb-8 self-end fixed top-0 hidden md:block"></app-header>
 
     <!-- Dashboard Content -->
     <div *ngIf="userRole === 'teacher'">
       <header class="bg-white shadow mb-8">
-        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 mt-14">
           <h1
             class="text-2xl font-bold tracking-tight text-gray-900 text-center"
           >
