@@ -231,6 +231,15 @@ a:hover {
   background-size: cover;
 }
 
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-children-p {
+  padding-left: 0 !important;
+}
+
 @media screen and (max-width: 767px) {
   .login-container-bg {
     border-radius: 1rem;

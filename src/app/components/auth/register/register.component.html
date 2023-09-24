@@ -224,7 +224,7 @@
                         />
                       </mat-form-field>
                       <mat-form-field class="reg-field-m">
-                        <mat-label>Age</mat-label>
+                        <mat-label>Major</mat-label>
                         <input
                           matInput
                           type="number"
@@ -252,6 +252,36 @@
                           required
                         />
                       </mat-form-field>
+                      <div class="py-4">
+                        <mat-accordion class="example-headers-align">
+                          <mat-expansion-panel>
+                            <mat-expansion-panel-header class="add-children-p">
+                              <button mat-raised-button color="primary">
+                                <mat-icon>add</mat-icon> Add Children
+                              </button>
+                            </mat-expansion-panel-header>
+
+                            <mat-form-field class="reg-field-m">
+                              <mat-label>First name, Last Name</mat-label>
+                              <input matInput />
+                            </mat-form-field>
+
+                            <mat-form-field class="reg-field-m">
+                              <mat-label>Class</mat-label>
+                              <input matInput />
+                            </mat-form-field>
+                            <mat-form-field class="reg-field-m">
+                              <mat-label>Garde</mat-label>
+                              <input matInput />
+                            </mat-form-field>
+                            <mat-form-field class="reg-field-m">
+                              <mat-label>Age</mat-label>
+                              <input matInput />
+                            </mat-form-field>
+                          </mat-expansion-panel>
+                        </mat-accordion>
+                      </div>
+
                       <div>
                         <button mat-button matStepperPrevious>Back</button>
                         <button mat-button matStepperNext>Next</button>

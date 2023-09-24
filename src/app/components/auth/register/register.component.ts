@@ -15,12 +15,14 @@ export class RegisterComponent {
   showButtons = true;
   showRegForm = false;
 
-
+  
   toggleRegForm() {
     this.showRegForm = true;
     this.showButtons = false;
 
   }
+
+
  
   firstFormGroup = this._formBuilder.group({
     firstCtrl: ['', Validators.required],

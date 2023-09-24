@@ -22,6 +22,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {NgSwitch, NgSwitchCase, AsyncPipe} from '@angular/common';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatCardModule} from '@angular/material/card';
+import {MatExpansionModule , MatAccordion} from '@angular/material/expansion';
 
 
 @NgModule({
@@ -52,6 +53,8 @@ import {MatCardModule} from '@angular/material/card';
     AsyncPipe,
     MatCheckboxModule,
     MatCardModule,
+    MatExpansionModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
