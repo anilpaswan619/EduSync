@@ -23,6 +23,8 @@ import {NgSwitch, NgSwitchCase, AsyncPipe} from '@angular/common';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatCardModule} from '@angular/material/card';
 import {MatExpansionModule , MatAccordion} from '@angular/material/expansion';
+import {NgIf} from '@angular/common';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 @NgModule({
@@ -54,6 +56,8 @@ import {MatExpansionModule , MatAccordion} from '@angular/material/expansion';
     MatCheckboxModule,
     MatCardModule,
     MatExpansionModule,
+    MatSidenavModule, 
+    NgIf,
     
   ],
   providers: [],
