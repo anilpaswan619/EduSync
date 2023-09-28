@@ -25,6 +25,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatExpansionModule , MatAccordion} from '@angular/material/expansion';
 import {NgIf} from '@angular/common';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { MobileNavComponent} from './components/left-nav/mobile-nav/mobile-nav.component';
+
 
 
 @NgModule({
@@ -36,6 +38,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     HeaderComponent,
     LeftNavComponent,
     HomeComponent,
+    MobileNavComponent,
+
+   
     
   ],
   imports: [

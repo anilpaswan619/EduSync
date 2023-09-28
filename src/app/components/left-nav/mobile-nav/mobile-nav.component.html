@@ -1,0 +1,95 @@
+<div>
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <p>Auto-resizing sidenav</p>
+      <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+      <button (click)="showFiller = !showFiller" mat-raised-button>
+        Toggle extra text
+      </button>
+    </mat-drawer>
+
+    <div class="example-sidenav-content">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        Toggle sidenav
+      </button>
+    </div>
+  </mat-drawer-container>
+
+  <!-- Mobile header/logo -->
+  <div class="py-4 text-center">
+    <h1 class="bold-text">
+      <div class="svg-icon-size">
+        <img src="/assets/icons/edu.svg" />
+      </div>
+      <div class="brand-name">Edu<span class="sync-color">Sync</span></div>
+    </h1>
+  </div>
+  <nav class="text-black-700 p-6 w-full">
+    <ul class="space-y-1.5">
+      <!-- Mobile menu items -->
+      <li>
+        <a
+          class="flex items-center gap-x-2 py-2 px-2.5 bg-indigo-500 text-white rounded-lg transition duration-300"
+        >
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example home icon"
+            fontIcon="grid_view"
+          ></mat-icon>
+          Dashboard
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+          class="flex items-center link-color gap-x-2 py-2 px-2.5 rounded-lg hover:bg-indigo-500 hover:text-white hover:rounded-lg transition duration-300"
+        >
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example home icon"
+            fontIcon="person_outline"
+          ></mat-icon>
+          Self Attendance
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+          class="flex items-center link-color gap-x-2 py-2 px-2.5 rounded-lg hover:bg-indigo-500 hover:text-white hover:rounded-lg transition duration-300"
+        >
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example home icon"
+            fontIcon="groups"
+          ></mat-icon>
+          Class Attendance
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+          class="flex items-center link-color gap-x-2 py-2 px-2.5 rounded-lg hover:bg-indigo-500 hover:text-white hover:rounded-lg transition duration-300"
+        >
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example home icon"
+            fontIcon="edit_note"
+          ></mat-icon>
+          Edit Info
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Mobile logout button -->
+  <a
+    routerLink="/home"
+    class="btn-logout mt-auto mb-12 ml-6 mr-6 flex items-center link-color gap-x-2 py-2 px-2.5 rounded-lg hover:bg-indigo-500 hover:text-white hover:rounded-lg transition duration-300"
+  >
+    <mat-icon
+      aria-hidden="false"
+      aria-label="Example home icon"
+      fontIcon="logout"
+    ></mat-icon>
+    Logout
+  </a>
+</div>
