@@ -237,7 +237,7 @@ a:hover {
 }
 
 .add-children-p {
-  padding-left: 0 !important;
+  padding: 0 !important;
 }
 .example-container {
   width: 500px;
@@ -257,6 +257,17 @@ a:hover {
 }
 .mt-container {
   margin-top: 7.2rem;
+}
+.add-children-display {
+  display: flex !important;
+  flex-direction: column !important;
+}
+.add-children-btn {
+  box-shadow: none !important;
+}
+.add-children-btn:hover {
+  background-color: transparent !important;
+  color: var(--primary-color) !important;
 }
 
 @media screen and (max-width: 767px) {
