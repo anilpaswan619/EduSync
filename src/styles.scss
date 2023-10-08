@@ -269,6 +269,9 @@ a:hover {
   background-color: transparent !important;
   color: var(--primary-color) !important;
 }
+.mat-expansion-indicator {
+  display: none !important;
+}
 
 @media screen and (max-width: 767px) {
   .login-container-bg {
