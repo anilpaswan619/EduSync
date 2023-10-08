@@ -1,12 +1,12 @@
-<div class="flex login-container-bg regular-text">
+<div class="flex login-container-bg regular-text flex-col md:flex-row w-full">
   <div
-    class="w-64 h-screen bg-gray-900 text-white fixed top-0 left-0 hidden md:block"
+    class="w-full md:w-64 h-screen bg-gray-900 text-white fixed top-0 left-0 md:block"
   >
     <app-left-nav></app-left-nav>
   </div>
 
-  <div class="flex-grow p-8 pt-4 flex flex-col ml-0 md:ml-64">
-    <app-header class="mb-8 self-end fixed top-0 hidden md:block"></app-header>
+  <div class="flex-grow p-8 pt-4 flex flex-col ml-0 md:ml-64 w-full">
+    <app-header class="mb-8 fixed top-0 md:block"></app-header>
     <div class="hidden max-md:block">
       <app-mobile-nav></app-mobile-nav>
     </div>
@@ -15,12 +15,6 @@
     <div *ngIf="userRole === 'teacher'">
       <header class="bg-white shadow mb-8">
         <div class="mx-auto px-4 py-6 sm:px-6 lg:px-8 mt-14">
-          <h1
-            class="text-2xl font-bold tracking-tight text-gray-900 text-center"
-          >
-            Welcome To Dashboard!
-          </h1>
-
           <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <!-- Card 1 -->
             <div class="bg-white rounded-lg shadow-md p-4 relative">
@@ -70,7 +64,7 @@
             <mat-card-content>
               <p class="text-justify py-3">
                 Welcome To the Dashboard, Sezuka Inu. Now you can explore your
-                online study resources and other student related activities.
+                online study resources and other student-related activities.
               </p>
             </mat-card-content>
             <mat-card-actions class="flex justify-between items-center">
