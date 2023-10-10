@@ -1,6 +1,6 @@
-<div>
+<div class="nav-height">
   <div>
-    <button type="button" mat-button (click)="drawer.toggle()">
+    <button type="button" mat-button (click)="drawer.toggle(); openNavHeight()">
       <mat-icon
         aria-hidden="false"
         aria-label="Example home icon"
@@ -9,7 +9,7 @@
     </button>
   </div>
   <!-- <mat-drawer-container class="example-container" autosize> -->
-  <mat-drawer #drawer class="example-sidenav" mode="side">
+  <mat-drawer #drawer class="example-sidenav" mode="side" id="openNav">
     <div class="py-4 text-center">
       <h1 class="bold-text flex items-center">
         <div class="svg-icon-size">

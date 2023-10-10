@@ -272,6 +272,11 @@ a:hover {
 .mat-expansion-indicator {
   display: none !important;
 }
+.nav-height {
+  position: fixed;
+  height: fit-content;
+  z-index: 1;
+}
 
 @media screen and (max-width: 767px) {
   .login-container-bg {

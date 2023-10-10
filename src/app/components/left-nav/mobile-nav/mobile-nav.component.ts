@@ -23,5 +23,16 @@ export class MobileNavComponent implements OnInit {
    
     this.isMobileView = window.innerWidth < 768; 
   }
+   openNavHeight() {
+    let NavHeight = document.getElementById('openNav');
+    if (NavHeight) {
+      NavHeight.style.display = "none";
+      NavHeight.style.background = "white";
+      if (NavHeight.style.display=="none") {
+        NavHeight.style.display = "block"
+    }
+  }
+  }
+  
 }
 
