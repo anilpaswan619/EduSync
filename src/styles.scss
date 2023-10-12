@@ -259,7 +259,7 @@ a:hover {
   padding: 20px;
 }
 .mt-container {
-  margin-top: 7.2rem;
+  margin-top: 8rem;
 }
 .add-children-display {
   display: flex !important;
@@ -280,8 +280,12 @@ a:hover {
   height: fit-content;
   z-index: 1;
 }
+.dashboard-card-hover {
+  transition: all 0.3s ease-in-out;
+}
 .dashboard-card-hover:hover {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
 }
 @media screen and (max-width: 767px) {
   .login-container-bg {
