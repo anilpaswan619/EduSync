@@ -26,6 +26,9 @@ import {MatExpansionModule , MatAccordion} from '@angular/material/expansion';
 import {NgIf} from '@angular/common';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { MobileNavComponent} from './components/left-nav/mobile-nav/mobile-nav.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
+
 
 
 
@@ -63,6 +66,8 @@ import { MobileNavComponent} from './components/left-nav/mobile-nav/mobile-nav.c
     MatExpansionModule,
     MatSidenavModule, 
     NgIf,
+    MatDatepickerModule, 
+    MatNativeDateModule
     
   ],
   providers: [],

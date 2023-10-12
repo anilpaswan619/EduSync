@@ -66,33 +66,46 @@
               </div>
             </div>
           </div>
-
-          <mat-card class="example-card mt-4">
-            <mat-card-header>
-              <div mat-card-avatar class="example-header-image"></div>
-              <mat-card-title>Sezuka Inu</mat-card-title>
-              <mat-card-subtitle>Student</mat-card-subtitle>
-            </mat-card-header>
-            <img
-              mat-card-image
-              src="assets/images/teacher.JPG"
-              alt="Photo of a Shiba Inu"
-            />
-            <mat-card-content>
-              <p class="text-justify py-3">
-                Welcome To the Dashboard, Sezuka Inu. Now you can explore your
-                online study resources and other student-related activities.
-              </p>
-            </mat-card-content>
-            <mat-card-actions class="flex justify-between items-center">
-              <button mat-raised-button mat-button color="warn">
-                <mat-icon>favorite</mat-icon> LIKE
-              </button>
-              <button mat-raised-button mat-button color="primary">
-                SHARE <mat-icon>share</mat-icon>
-              </button>
-            </mat-card-actions>
-          </mat-card>
+          <div class="flex justify-between py-6">
+            <div>
+              <mat-card class="example-card">
+                <mat-card-header>
+                  <div mat-card-avatar class="example-header-image"></div>
+                  <mat-card-title>Sezuka Inu</mat-card-title>
+                  <mat-card-subtitle>Student</mat-card-subtitle>
+                </mat-card-header>
+                <img
+                  mat-card-image
+                  src="assets/images/teacher.JPG"
+                  alt="Photo of a Shiba Inu"
+                />
+                di
+                <div>
+                  <mat-card-content>
+                    <p class="text-justify py-3">
+                      Welcome To the Dashboard, Sezuka Inu. Now you can explore
+                      your online study resources and other student-related
+                      activities.
+                    </p>
+                  </mat-card-content>
+                </div>
+                <mat-card-actions class="flex justify-between items-center">
+                  <button mat-raised-button mat-button color="warn">
+                    <mat-icon>favorite</mat-icon> LIKE
+                  </button>
+                  <button mat-raised-button mat-button color="primary">
+                    SHARE <mat-icon>share</mat-icon>
+                  </button>
+                </mat-card-actions>
+              </mat-card>
+            </div>
+            <div>
+              <mat-card class="demo-inline-calendar-card">
+                <mat-calendar [(selected)]="selected"></mat-calendar>
+              </mat-card>
+              <p>Selected date: {{ selected }}</p>
+            </div>
+          </div>
         </div>
       </header>
       <main>
