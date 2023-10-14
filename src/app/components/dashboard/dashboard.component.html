@@ -66,44 +66,198 @@
               </div>
             </div>
           </div>
-          <div class="flex justify-between flex-wrap py-6">
-            <div>
-              <mat-card class="example-card">
-                <mat-card-header>
-                  <div mat-card-avatar class="example-header-image"></div>
-                  <mat-card-title>Sezuka Inu</mat-card-title>
-                  <mat-card-subtitle>Student</mat-card-subtitle>
-                </mat-card-header>
-                <img
-                  mat-card-image
-                  src="assets/images/teacher.JPG"
-                  alt="Photo of a Shiba Inu"
-                />
-
-                <div>
-                  <mat-card-content>
-                    <p class="text-justify py-3">
-                      Welcome To the Dashboard, Sezuka Inu. Now you can explore
-                      your online study resources and other student-related
-                      activities.
-                    </p>
-                  </mat-card-content>
-                </div>
-                <mat-card-actions class="flex justify-between items-center">
-                  <button mat-raised-button mat-button color="warn">
-                    <mat-icon>favorite</mat-icon> LIKE
-                  </button>
-                  <button mat-raised-button mat-button color="primary">
-                    SHARE <mat-icon>share</mat-icon>
-                  </button>
-                </mat-card-actions>
-              </mat-card>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4 py-8">
+            <div class="col-span-2">
+              <p class="font-bold mb-8">Student Progress</p>
+              <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                  <thead class="bg-gray-100">
+                    <tr>
+                      <th
+                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      >
+                        Subjects
+                      </th>
+                      <th
+                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      >
+                        Content Progress
+                      </th>
+                      <th
+                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      >
+                        Grades
+                      </th>
+                      <th
+                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      >
+                        Performance
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="bg-white divide-y divide-gray-200">
+                    <tr>
+                      <td class="flex items-center px-6 py-4 whitespace-nowrap">
+                        <img src="assets/images/book.png" class="w-8 mr-2" />
+                        Mathematics
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap">Physics</td>
+                      <td class="px-6 py-4 whitespace-nowrap">1961</td>
+                      <td class="px-6 py-4 whitespace-nowrap text-green-600">
+                        Satisfactory
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex items-center px-6 py-4 whitespace-nowrap">
+                        <img src="assets/images/book.png" class="w-8 mr-2" />
+                        Physics
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap">The Eagles</td>
+                      <td class="px-6 py-4 whitespace-nowrap">1972</td>
+                      <td class="px-6 py-4 whitespace-nowrap text-yellow-500">
+                        Average
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex items-center px-6 py-4 whitespace-nowrap">
+                        <img src="assets/images/book.png" class="w-8 mr-2" />
+                        Chemistry
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap">Earth</td>
+                      <td class="px-6 py-4 whitespace-nowrap">1975</td>
+                      <td class="px-6 py-4 whitespace-nowrap text-red-500">
+                        At Risk
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex items-center px-6 py-4 whitespace-nowrap">
+                        <img src="assets/images/book.png" class="w-8 mr-2" />
+                        Physics
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap">The Eagles</td>
+                      <td class="px-6 py-4 whitespace-nowrap">1972</td>
+                      <td class="px-6 py-4 whitespace-nowrap text-green-600">
+                        Satisfactory
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex items-center px-6 py-4 whitespace-nowrap">
+                        <img src="assets/images/book.png" class="w-8 mr-2" />
+                        Physics
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap">The Eagles</td>
+                      <td class="px-6 py-4 whitespace-nowrap">1972</td>
+                      <td class="px-6 py-4 whitespace-nowrap text-red-500">
+                        At Risk
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-            <div>
+            <div class="col-span-1">
+              <p class="font-bold mb-8">Semester Progress</p>
+              <div class="w-full">
+                <label
+                  for="completion-progress"
+                  class="block text-sm font-medium text-gray-700"
+                  >Course Completion:</label
+                >
+                <div class="relative pt-1">
+                  <div class="flex mb-2 items-center justify-between">
+                    <div>
+                      <span
+                        class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-indigo-600 bg-indigo-200"
+                      >
+                        <mat-icon>hourglass_empty</mat-icon> In Progress
+                      </span>
+                    </div>
+                    <div class="text-right">
+                      <span
+                        class="text-xs font-semibold inline-block text-indigo-600"
+                      >
+                        60%
+                      </span>
+                    </div>
+                  </div>
+                  <div class="flex mb-2 items-center justify-between">
+                    <div>
+                      <span
+                        class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-yellow-600 bg-yellow-200"
+                      >
+                        <mat-icon>access_time</mat-icon> Pending
+                      </span>
+                    </div>
+                    <div class="text-right">
+                      <span
+                        class="text-xs font-semibold inline-block text-yellow-600"
+                      >
+                        30%
+                      </span>
+                    </div>
+                  </div>
+                  <div class="flex mb-2 items-center justify-between">
+                    <div>
+                      <span
+                        class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200"
+                      >
+                        <mat-icon>done</mat-icon> Completed
+                      </span>
+                    </div>
+                    <div class="text-right">
+                      <span
+                        class="text-xs font-semibold inline-block text-green-600"
+                      >
+                        100%
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-teal-200"
+                  >
+                    <div
+                      style="width: 20%"
+                      class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-teal-500"
+                    >
+                      <!-- In Progress section (20%) -->
+                    </div>
+                    <div
+                      style="width: 40%"
+                      class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-yellow-500"
+                    >
+                      <!-- Completed section (40%) -->
+                    </div>
+                    <div
+                      style="width: 40%"
+                      class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-indigo-600"
+                    >
+                      <!-- Pending section (40%) -->
+                    </div>
+                  </div>
+                  <div class="mt-4">
+                    <div class="relative pt-1">
+                      <div class="text-xs font-semibold text-indigo-600">
+                        <mat-icon>timelapse</mat-icon> 122 Days Left for
+                        Semester
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-1">
+              <p class="font-bold mb-8">Upcoming Events</p>
               <mat-card class="demo-inline-calendar-card">
                 <mat-calendar [(selected)]="selected"></mat-calendar>
               </mat-card>
-              <p>Selected date: {{ selected }}</p>
+              <div class="w-3/4">
+                <p class="py-6">
+                  <mat-icon class="text-indigo-600">event</mat-icon>
+                  <span class="align-super text-[15px]">
+                    Selected Date: {{ selected }}</span
+                  >
+                </p>
+              </div>
             </div>
           </div>
         </div>
