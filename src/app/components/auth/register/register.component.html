@@ -260,8 +260,11 @@
                                 mat-raised-button
                                 color="secondary"
                                 class="mx-auto border-0 add-children-btn"
+                                (click)="toggleIcon()"
                               >
-                                <mat-icon>add</mat-icon>Add Children
+                                <mat-icon *ngIf="isAddVisible">add</mat-icon>
+                                <mat-icon *ngIf="!isAddVisible">remove</mat-icon
+                                >Add Children
                               </button>
                             </mat-expansion-panel-header>
 

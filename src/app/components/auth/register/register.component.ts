@@ -14,6 +14,7 @@ import {map} from 'rxjs/operators';
 export class RegisterComponent {
   showButtons = true;
   showRegForm = false;
+  isAddVisible = true;
 
   
   toggleRegForm() {
@@ -54,5 +55,10 @@ export class RegisterComponent {
     this.stepperOrientation = breakpointObserver
       .observe('(min-width: 1100px)')
       .pipe(map(({matches}) => (matches ? 'horizontal' : 'vertical')));
+  }
+
+
+  toggleIcon() {
+    this.isAddVisible = !this.isAddVisible;
   }
 }
