@@ -100,18 +100,24 @@ a:hover {
   border-radius: 6px;
   padding-left: 3.5rem;
   padding-right: 3.5rem;
+  transition: all 0.3s ease-out;
 }
 .login-btn:hover {
   background-color: #4621ea;
+  box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px) !important;
 }
 .register-btn {
   background-color: var(--text-color2);
   border-radius: 6px;
   padding-left: 3rem;
   padding-right: 3rem;
+  transition: all 0.3s ease-out;
 }
 .register-btn:hover {
   background-color: #1a1919;
+  box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px) !important;
 }
 .login-container-bg {
   background-color: #c0acf52b;
@@ -151,9 +157,12 @@ a:hover {
   padding-left: 1.8rem;
   padding-right: 2rem;
   margin: auto;
+  transition: all 0.3s ease-out;
 }
 .parent-btn:hover {
   background-color: #4621ea;
+  box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px) !important;
 }
 .teacher-btn {
   background-color: var(--text-color2);
@@ -161,9 +170,12 @@ a:hover {
   padding-left: 1rem;
   padding-right: 2rem;
   margin: auto;
+  transition: all 0.3s ease-out;
 }
 .teacher-btn:hover {
   background-color: #1a1919;
+  box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px) !important;
 }
 .student-btn {
   background-color: #3841ce;
@@ -171,9 +183,12 @@ a:hover {
   padding-left: 1rem;
   padding-right: 2rem;
   margin: auto;
+  transition: all 0.3s ease-out;
 }
 .student-btn:hover {
   background-color: #161fa1;
+  box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px) !important;
 }
 .text-indigo-600 {
   color: var(--primary-color) !important;
