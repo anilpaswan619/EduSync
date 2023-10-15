@@ -10,7 +10,7 @@
   </div>
 
   <nav class="hidden md:block text-black-700 p-6 w-full">
-    <ul class="space-y-1.5">
+    <ul class="space-y-8">
       <li>
         <a
           class="flex items-center gap-x-2 py-2 px-2.5 bg-indigo-500 text-white rounded-lg transition duration-300"
@@ -66,16 +66,18 @@
     </ul>
   </nav>
 
-  <a
-    routerLink="/home"
-    class="btn-logout mt-auto mb-12 ml-6 mr-6 flex items-center link-color gap-x-2 py-2 px-2.5 rounded-lg hover:bg-indigo-500 hover:text-white hover:rounded-lg transition duration-300"
-    ><mat-icon
-      aria-hidden="false"
-      aria-label="Example home icon"
-      fontIcon="logout"
-    ></mat-icon>
-    Logout</a
-  >
+  <div class="mt-auto py-6">
+    <a
+      routerLink="/home"
+      class="btn-logout mb-12 ml-6 mr-6 flex items-center link-color gap-x-2 py-2 px-2.5 rounded-lg hover:bg-indigo-500 hover:text-white hover:rounded-lg transition duration-300"
+      ><mat-icon
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="logout"
+      ></mat-icon>
+      Logout</a
+    >
+  </div>
 
   <!-- Mobile Menu (Hidden on Desktop) -->
 

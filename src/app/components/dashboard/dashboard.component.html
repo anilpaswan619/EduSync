@@ -311,18 +311,18 @@
                 </div>
               </div>
             </div>
-            <div class="col-span-1">
+            <div class="col-span-1 calender-container">
               <p class="font-bold mb-6">Upcoming Events</p>
-              <mat-card class="demo-inline-calendar-card">
+              <mat-card>
                 <mat-calendar
                   [(selected)]="selected"
-                  class="w-full"
+                  class="w-full border shadow-md rounded-lg"
                 ></mat-calendar>
               </mat-card>
-              <div class="w-3/4">
+              <div class="w-full">
                 <p class="py-6 text-indigo-600 font-semibold">
                   <mat-icon>event</mat-icon>
-                  <span class="align-super text-[15px]">
+                  <span class="align-super text-[14px]">
                     Selected Date: {{ selected }}</span
                   >
                 </p>

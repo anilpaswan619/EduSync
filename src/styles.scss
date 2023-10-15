@@ -302,6 +302,11 @@ a:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
 }
+.calender-container {
+  .mat-mdc-card {
+    box-shadow: none !important;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .login-container-bg {
