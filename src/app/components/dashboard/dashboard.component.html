@@ -2,18 +2,16 @@
   <div class="w-full md:w-64 h-screen text-white fixed top-0 left-0 md:block">
     <app-left-nav></app-left-nav>
   </div>
-
-  <div class="flex-grow p-8 pt-4 flex flex-col ml-0 md:ml-64 pb-0">
+  <div class="hidden max-md:block w-full z-20">
+    <app-mobile-nav></app-mobile-nav>
+  </div>
+  <div class="flex-grow p-8 pt-4 flex flex-col ml-0 md:ml-64 pb-0 mobile-mt">
     <app-header class="fixed top-0 hidden md:block header-style"></app-header>
-
-    <div class="hidden max-md:block">
-      <app-mobile-nav></app-mobile-nav>
-    </div>
 
     <!-- Dashboard Content -->
     <div *ngIf="userRole === 'teacher'">
       <header class="bg-white md:shadow-md">
-        <div class="mx-auto md:px-4 pt-6 sm:px-6 lg:px-8 mt-container">
+        <div class="mx-auto md:px-4 pt-6 sm:px-6 lg:px-8 md:mt-container">
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Card 1 -->
             <div

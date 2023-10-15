@@ -297,11 +297,7 @@ a:hover {
 .mat-expansion-indicator {
   display: none !important;
 }
-.nav-height {
-  position: fixed;
-  height: fit-content;
-  z-index: 1;
-}
+
 .dashboard-card-hover {
   transition: all 0.3s ease-in-out;
 }
@@ -350,8 +346,8 @@ a:hover {
   .btn-logout {
     display: none;
   }
-  .mt-container {
-    margin-top: 4rem;
+  .mobile-mt {
+    margin-top: -20rem;
   }
 }
 @media screen and (max-width: 767px) {

@@ -1,57 +1,47 @@
-<div class="nav-height w-full">
+<div class="w-full">
   <div
     class="shadow-lg bg-white z-10 flex justify-between items-center px-2 py-4"
   >
-    <button
-      type="button"
-      mat-button
-      (click)="drawer.toggle(); openNavHeight()"
-      class="text-gray-600"
-    >
+    <button type="button" mat-button (click)="drawer.toggle(); openNavHeight()">
       <mat-icon
         aria-hidden="false"
         aria-label="Menu icon"
         fontIcon="menu"
-        class="text-xl"
       ></mat-icon>
     </button>
-    <div class="flex items-center space-x-4">
-      <button
-        type="button"
-        class="relative rounded-full bg-gray-200 p-2 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-violet-700"
-      >
-        <span class="absolute -inset-1.5"></span>
-        <img src="assets/icons/bell.svg" alt="Bell Icon" class="w-6 h-6" />
-      </button>
-      <button
-        type="button"
-        class="relative flex items-center rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-violet-700"
-        id="user-menu-button"
-        aria-expanded="false"
-        aria-haspopup="true"
-      >
-        <span class="absolute -inset-1.5"></span>
-        <img
-          class="h-8 w-8 rounded-full"
-          src="assets/images/teacher.JPG"
-          alt="User Avatar"
-        />
-      </button>
-    </div>
+
+    <h1 class="bold-text flex items-center">
+      <div class="svg-icon-size">
+        <img src="/assets/icons/edu.svg" />
+      </div>
+      <div class="brand-name">Edu<span class="sync-color">Sync</span></div>
+    </h1>
+
+    <button
+      type="button"
+      class="relative flex items-center rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-violet-700"
+      id="user-menu-button"
+      aria-expanded="false"
+      aria-haspopup="true"
+    >
+      <span class="absolute -inset-1.5"></span>
+      <img
+        class="h-8 w-8 rounded-full"
+        src="assets/images/teacher.JPG"
+        alt="User Avatar"
+      />
+    </button>
   </div>
 
   <!-- <mat-drawer-container class="example-container" autosize> -->
-  <mat-drawer #drawer class="example-sidenav" mode="side" id="openNav">
-    <div class="py-4 text-center">
-      <h1 class="bold-text flex items-center">
-        <div class="svg-icon-size">
-          <img src="/assets/icons/edu.svg" />
-        </div>
-        <div class="brand-name">Edu<span class="sync-color">Sync</span></div>
-      </h1>
-    </div>
-    <nav class="text-black-700 p-6 w-full">
-      <ul class="space-y-1.5">
+  <mat-drawer
+    #drawer
+    class="example-sidenav shadow-lg"
+    mode="side"
+    id="openNav"
+  >
+    <nav class="text-black-700 p-6 w-full pb-0 pl-0">
+      <ul class="space-y-4">
         <!-- Mobile menu items -->
         <li>
           <a
@@ -104,22 +94,21 @@
             Edit Info
           </a>
         </li>
+        <hr class="border-indigo-200" />
+        <li>
+          <a
+            routerLink="/home"
+            class="flex items-center link-color gap-x-2 py-3 px-2.5 rounded-lg hover:bg-indigo-500 hover:text-white hover:rounded-lg transition duration-300"
+            ><mat-icon
+              aria-hidden="false"
+              aria-label="Example home icon"
+              fontIcon="logout"
+            ></mat-icon>
+            Logout</a
+          >
+        </li>
       </ul>
     </nav>
-    <!-- Mobile logout button -->
-    <a
-      routerLink="/home"
-      class="btn-logout mt-auto mb-12 ml-6 mr-6 flex items-center link-color gap-x-2 py-2 px-2.5 rounded-lg hover:bg-indigo-500 hover:text-white hover:rounded-lg transition duration-300"
-    >
-      <mat-icon
-        aria-hidden="false"
-        aria-label="Example home icon"
-        fontIcon="logout"
-      ></mat-icon>
-      Logout
-    </a>
   </mat-drawer>
   <!-- </mat-drawer-container> -->
-
-  <!-- Mobile header/logo -->
 </div>
