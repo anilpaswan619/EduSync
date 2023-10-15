@@ -11,13 +11,15 @@
     <!-- Dashboard Content -->
     <div *ngIf="userRole === 'teacher'">
       <header class="bg-white md:shadow-md">
-        <div class="mx-auto md:px-4 pt-6 sm:px-6 lg:px-8 md:mt-container">
+        <div class="mx-auto md:px-4 pt-6 sm:px-6 lg:px-8 mt-container">
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Card 1 -->
             <div
               class="bg-white rounded-lg shadow-lg p-6 relative dashboard-card-hover"
             >
-              <span class="absolute top-0 right-0 w-20 p-4">
+              <span
+                class="absolute top-0 right-0 w-20 p-4 dashboard-icon-width"
+              >
                 <img src="assets/images/attendance.png" />
               </span>
               <h3 class="text-base font-semibold text-gray-800 mb-5">
@@ -33,7 +35,9 @@
             <div
               class="bg-white rounded-lg shadow-lg p-6 relative dashboard-card-hover"
             >
-              <span class="absolute top-0 right-0 w-24 p-4">
+              <span
+                class="absolute top-0 right-0 w-24 p-4 dashboard-icon-width"
+              >
                 <img src="assets/images/performance.png" />
               </span>
               <h3 class="text-base font-semibold text-gray-800 mb-5">
@@ -49,7 +53,9 @@
             <div
               class="bg-white rounded-lg shadow-lg p-6 relative dashboard-card-hover"
             >
-              <span class="absolute top-0 right-0 w-20 p-4">
+              <span
+                class="absolute top-0 right-0 w-20 p-4 dashboard-icon-width"
+              >
                 <img src="assets/images/students.png" />
               </span>
               <h3 class="text-base font-semibold text-gray-800 mb-5">

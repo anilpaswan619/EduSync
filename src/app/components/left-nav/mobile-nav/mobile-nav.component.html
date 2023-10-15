@@ -1,16 +1,10 @@
 <div class="w-full">
-  <div
-    class="shadow-lg bg-white z-10 flex justify-between items-center px-2 py-4"
-  >
+  <div class="shadow-lg bg-white z-10 flex justify-between items-center py-4">
     <button type="button" mat-button (click)="drawer.toggle(); openNavHeight()">
-      <mat-icon
-        aria-hidden="false"
-        aria-label="Menu icon"
-        fontIcon="menu"
-      ></mat-icon>
+      <img src="/assets/images/menu.png" alt="" class="w-5" />
     </button>
 
-    <h1 class="bold-text flex items-center">
+    <h1 class="bold-text flex items-center mobile-header-logo">
       <div class="svg-icon-size">
         <img src="/assets/icons/edu.svg" />
       </div>
@@ -19,7 +13,7 @@
 
     <button
       type="button"
-      class="relative flex items-center rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-violet-700"
+      class="mr-2 relative flex items-center rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-violet-700"
       id="user-menu-button"
       aria-expanded="false"
       aria-haspopup="true"
