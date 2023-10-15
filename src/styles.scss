@@ -314,6 +314,11 @@ a:hover {
     box-shadow: none !important;
   }
 }
+.header-style {
+  width: -webkit-fill-available;
+  margin-right: 2rem;
+  z-index: 1;
+}
 
 @media screen and (max-width: 767px) {
   .login-container-bg {
@@ -344,6 +349,9 @@ a:hover {
   }
   .btn-logout {
     display: none;
+  }
+  .mt-container {
+    margin-top: 4rem;
   }
 }
 @media screen and (max-width: 767px) {

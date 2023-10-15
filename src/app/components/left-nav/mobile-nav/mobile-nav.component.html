@@ -1,13 +1,45 @@
-<div class="nav-height">
-  <div>
-    <button type="button" mat-button (click)="drawer.toggle(); openNavHeight()">
+<div class="nav-height w-full">
+  <div
+    class="shadow-lg bg-white z-10 flex justify-between items-center px-2 py-4"
+  >
+    <button
+      type="button"
+      mat-button
+      (click)="drawer.toggle(); openNavHeight()"
+      class="text-gray-600"
+    >
       <mat-icon
         aria-hidden="false"
-        aria-label="Example home icon"
+        aria-label="Menu icon"
         fontIcon="menu"
+        class="text-xl"
       ></mat-icon>
     </button>
+    <div class="flex items-center space-x-4">
+      <button
+        type="button"
+        class="relative rounded-full bg-gray-200 p-2 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-violet-700"
+      >
+        <span class="absolute -inset-1.5"></span>
+        <img src="assets/icons/bell.svg" alt="Bell Icon" class="w-6 h-6" />
+      </button>
+      <button
+        type="button"
+        class="relative flex items-center rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-violet-700"
+        id="user-menu-button"
+        aria-expanded="false"
+        aria-haspopup="true"
+      >
+        <span class="absolute -inset-1.5"></span>
+        <img
+          class="h-8 w-8 rounded-full"
+          src="assets/images/teacher.JPG"
+          alt="User Avatar"
+        />
+      </button>
+    </div>
   </div>
+
   <!-- <mat-drawer-container class="example-container" autosize> -->
   <mat-drawer #drawer class="example-sidenav" mode="side" id="openNav">
     <div class="py-4 text-center">
