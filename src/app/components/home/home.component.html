@@ -34,7 +34,7 @@
         <div class="text-center my-12" *ngIf="!buttonClicked">
           <a
             (click)="showButtons = true; buttonClicked = true"
-            class="regular-text login-btn py-2 inline-block bg-gradient-to-br dark:focus:ring-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 from-purple-600 hover:bg-gradient-to-bl rounded-lg to-blue-500"
+            class="regular-text login-btn py-2 inline-block bg-gradient-to-br dark:focus:ring-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 from-purple-500 hover:bg-gradient-to-bl rounded-lg to-blue-500"
           >
             Login
           </a>
@@ -47,7 +47,7 @@
 
           <a
             routerLink="/register"
-            class="register-btn py-2 inline-block bg-gradient-to-br dark:focus:ring-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-300 from-gray-900 hover:bg-gradient-to-bl rounded-lg to-gray-500"
+            class="register-btn py-2 inline-block bg-gradient-to-br dark:focus:ring-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-300 from-gray-900 hover:bg-gradient-to-bl rounded-lg to-zinc-500"
           >
             Register
           </a>
@@ -71,7 +71,7 @@
           </div>
           <div class="my-6 mt-10">
             <button
-              class="regular-text parent-btn py-2 flex"
+              class="regular-text parent-btn py-2 flex bg-gradient-to-br from-blue-500"
               (click)="showLogin = true"
             >
               <img src="/assets/icons/parent.svg " class="h-6 w-6 mr-2" />
@@ -80,7 +80,7 @@
           </div>
           <div class="my-6">
             <button
-              class="regular-text teacher-btn py-2 flex"
+              class="regular-text teacher-btn py-2 flex bg-gradient-to-br from-zinc-900 to-slate-500 text"
               (click)="showLogin = true"
             >
               <img src="/assets/icons/teacher.svg " class="h-6 w-6 mr-2" />
@@ -89,7 +89,7 @@
           </div>
           <div class="my-6">
             <button
-              class="regular-text student-btn py-2 flex"
+              class="regular-text student-btn py-2 flex bg-gradient-to-br from-violet-600"
               (click)="showLogin = true"
             >
               <img src="/assets/icons/student.svg " class="h-6 w-6 mr-2" />

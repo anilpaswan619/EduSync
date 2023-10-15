@@ -50,7 +50,7 @@
             </div>
             <div class="my-6 mt-10">
               <button
-                class="regular-text parent-btn py-2 flex"
+                class="regular-text parent-btn py-2 flex bg-gradient-to-br from-blue-500"
                 (click)="toggleRegForm()"
               >
                 <img src="/assets/icons/parent.svg " class="h-6 w-6 mr-2" />
@@ -59,7 +59,7 @@
             </div>
             <div class="my-6">
               <button
-                class="regular-text teacher-btn py-2 flex"
+                class="regular-text teacher-btn py-2 flex bg-gradient-to-br from-zinc-900 to-slate-500 text"
                 (click)="toggleRegForm()"
               >
                 <img src="/assets/icons/teacher.svg " class="h-6 w-6 mr-2" />
@@ -68,7 +68,7 @@
             </div>
             <div class="my-6">
               <button
-                class="regular-text student-btn py-2 flex"
+                class="regular-text student-btn py-2 flex bg-gradient-to-br from-violet-600"
                 (click)="toggleRegForm()"
               >
                 <img src="/assets/icons/student.svg " class="h-6 w-6 mr-2" />
@@ -351,7 +351,10 @@
                   </mat-step>
                 </mat-stepper>
                 <div>
-                  <button mat-raised-button class="btn-sign-up w-60 font-bold">
+                  <button
+                    mat-raised-button
+                    class="btn-sign-up w-60 font-bold bg-gradient-to-br from-indigo-500 to-violet-500 btn-style-hover"
+                  >
                     Sign up
                   </button>
                 </div>

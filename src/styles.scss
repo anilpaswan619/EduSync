@@ -95,6 +95,13 @@ a:hover {
   margin-top: 4px;
   color: black;
 }
+.btn-style-hover {
+  transition: all 0.3s ease-out !important;
+}
+.btn-style-hover:hover {
+  box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px) !important;
+}
 .login-btn {
   background-color: var(--primary-color);
   border-radius: 6px;
