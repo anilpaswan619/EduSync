@@ -13,23 +13,37 @@
           <img
             src="assets/images/hello.png"
             alt="Bell Icon"
-            class="w-7 h-7 mr-3"
+            class="w-7 h-7 mr-5"
           />
           Welcome Anil !!
         </h1>
-        <div class="flex items-center space-x-2">
+        <div class="flex items-center space-x-8">
           <input
             type="text"
             class="rounded-l-full bg-gray-100 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-700"
             placeholder="Search..."
           />
-          <button
-            type="button"
-            class="relative rounded-full bg-gray-200 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-700"
-          >
-            <span class="absolute -inset-1.5"></span>
-            <img src="assets/icons/bell.svg" alt="Bell Icon" class="w-6 h-6" />
-          </button>
+          <div class="flex">
+            <button
+              type="button"
+              class="relative rounded-full bg-gray-200 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-700"
+            >
+              <span class="absolute -inset-1.5"></span>
+              <img
+                src="assets/icons/bell.svg"
+                alt="Bell Icon"
+                class="w-7 h-7"
+              />
+            </button>
+            <span class="relative flex h-2 w-2 mt-2 ml-[-2px]">
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-600 opacity-75"
+              ></span>
+              <span
+                class="relative inline-flex rounded-full h-2 w-2 bg-indigo-600"
+              ></span>
+            </span>
+          </div>
           <div class="hidden md:block">
             <div class="relative">
               <button
