@@ -1,19 +1,23 @@
 <div class="w-full">
-  <div class="shadow-lg bg-white z-10 flex justify-between items-center py-4">
+  <div
+    class="shadow-lg bg-white z-10 flex justify-between items-center py-4 shadow-indigo-200/50"
+  >
     <button type="button" mat-button (click)="drawer.toggle(); openNavHeight()">
       <img src="/assets/images/menu.png" alt="" class="w-5" />
     </button>
 
     <h1 class="bold-text flex items-center mobile-header-logo">
-      <div class="svg-icon-size">
+      <div class="svg-icon-size-mobile">
         <img src="/assets/icons/edu.svg" />
       </div>
-      <div class="brand-name">Edu<span class="sync-color">Sync</span></div>
+      <div class="brand-name-mobile">
+        Edu<span class="sync-color">Sync</span>
+      </div>
     </h1>
 
     <button
       type="button"
-      class="mr-2 relative flex items-center rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-violet-700"
+      class="mr-4 relative flex items-center rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-violet-700"
       id="user-menu-button"
       aria-expanded="false"
       aria-haspopup="true"
@@ -30,7 +34,7 @@
   <!-- <mat-drawer-container class="example-container" autosize> -->
   <mat-drawer
     #drawer
-    class="example-sidenav shadow-lg"
+    class="example-sidenav shadow-lg shadow-indigo-200/50"
     mode="side"
     id="openNav"
   >

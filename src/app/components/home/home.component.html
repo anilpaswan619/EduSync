@@ -34,20 +34,20 @@
         <div class="text-center my-12" *ngIf="!buttonClicked">
           <a
             (click)="showButtons = true; buttonClicked = true"
-            class="regular-text login-btn py-2 inline-block bg-gradient-to-br dark:focus:ring-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 from-purple-600 hover:bg-gradient-to-bl rounded-lg to-blue-600"
+            class="regular-text login-btn py-3 inline-block bg-gradient-to-br dark:focus:ring-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 from-purple-600 hover:bg-gradient-to-bl rounded-lg to-blue-600 w-full"
           >
             Login
           </a>
 
           <div class="text-center justify-center flex items-center">
             <hr class="border-gray-400 w-12 mx-2" />
-            <div class="py-2 inline-block">or</div>
+            <div class="py-4 inline-block">or</div>
             <hr class="border-gray-400 w-12 mx-2" />
           </div>
 
           <a
             routerLink="/register"
-            class="register-btn py-2 inline-block bg-gradient-to-br dark:focus:ring-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-300 from-gray-900 hover:bg-gradient-to-bl rounded-lg to-zinc-500"
+            class="register-btn py-3 inline-block bg-gradient-to-br dark:focus:ring-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-300 from-gray-900 hover:bg-gradient-to-bl rounded-lg to-zinc-500 w-full"
           >
             Register
           </a>

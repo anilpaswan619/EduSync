@@ -10,12 +10,12 @@
 
     <!-- Dashboard Content -->
     <div *ngIf="userRole === 'teacher'">
-      <header class="bg-white md:shadow-md">
+      <header class="bg-white md:shadow-md shadow-indigo-200/50">
         <div class="mx-auto md:px-4 pt-6 sm:px-6 lg:px-8 mt-container">
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Card 1 -->
             <div
-              class="bg-white rounded-lg shadow-lg p-6 relative dashboard-card-hover border-t-2 border-t-gray-100"
+              class="bg-white rounded-lg shadow-lg p-6 relative dashboard-card-hover border-t-2 border-t-gray-100 shadow-indigo-200/50"
             >
               <span
                 class="absolute top-0 right-0 w-20 p-4 dashboard-icon-width"
@@ -33,7 +33,7 @@
 
             <!-- Card 2 -->
             <div
-              class="bg-white rounded-lg shadow-lg p-6 relative dashboard-card-hover border-t-2 border-t-gray-100"
+              class="bg-white rounded-lg shadow-lg p-6 relative dashboard-card-hover border-t-2 border-t-gray-100 shadow-indigo-200/50"
             >
               <span
                 class="absolute top-0 right-0 w-24 p-4 dashboard-icon-width"
@@ -51,7 +51,7 @@
 
             <!-- Card 3 -->
             <div
-              class="bg-white rounded-lg shadow-lg p-6 relative dashboard-card-hover border-t-2 border-t-gray-100"
+              class="bg-white rounded-lg shadow-lg p-6 relative dashboard-card-hover border-t-2 border-t-gray-100 shadow-indigo-200/50"
             >
               <span
                 class="absolute top-0 right-0 w-20 p-4 dashboard-icon-width"
@@ -70,7 +70,9 @@
           <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pt-10">
             <div class="col-span-2">
               <p class="font-bold mb-6">Student Progress</p>
-              <div class="relative overflow-x-auto border rounded-lg shadow-md">
+              <div
+                class="relative overflow-x-auto border rounded-lg shadow-md shadow-indigo-200/50"
+              >
                 <table
                   class="min-w-full divide-y divide-gray-200 border-collapse table-auto"
                 >
@@ -223,7 +225,7 @@
             <div class="col-span-2 md:col-span-1">
               <p class="font-bold mb-6">Semester Progress</p>
               <div
-                class="w-full shadow-md rounded-lg px-4 py-8 border bg-white"
+                class="w-full shadow-md rounded-lg px-4 py-8 border bg-white shadow-indigo-200/50"
               >
                 <div class="relative pt-1">
                   <div class="flex mb-5 items-center justify-between">
@@ -319,7 +321,7 @@
               <mat-card>
                 <mat-calendar
                   [(selected)]="selected"
-                  class="w-full border shadow-md rounded-lg"
+                  class="w-full border shadow-md rounded-lg shadow-indigo-200/50"
                 ></mat-calendar>
               </mat-card>
               <div class="w-full">
