@@ -1,0 +1,22 @@
+<div class="flex justify-between items-center py-12 px-6">
+  <h2 class="text-gray-800">
+    <mat-icon
+      aria-hidden="false"
+      aria-label="Example home icon"
+      fontIcon="light_mode"
+      class="align-top mr-1 text-indigo-600"
+    ></mat-icon>
+    Dark Mode
+  </h2>
+
+  <div
+    [ngClass]="{ 'bg-indigo-600': isToggled, 'bg-slate-900/10': !isToggled }"
+    (click)="toggle(); toggleDarkMode()"
+    class="mode-outline pointer-events-auto h-6 w-10 rounded-full p-1 ring-1 ring-inset transition duration-200 ease-in-out ring-black/20 cursor-pointer"
+  >
+    <div
+      [ngClass]="{ 'translate-x-4': isToggled }"
+      class="h-4 w-4 rounded-full bg-white shadow-sm ring-1 ring-slate-700/10 transition duration-200 ease-in-out"
+    ></div>
+  </div>
+</div>

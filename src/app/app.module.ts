@@ -28,6 +28,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { MobileNavComponent} from './components/left-nav/mobile-nav/mobile-nav.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
+import { ModeToggleComponent } from './components/mode-toggle/mode-toggle.component';
 
 
 
@@ -42,6 +43,7 @@ import {MatNativeDateModule} from '@angular/material/core';
     LeftNavComponent,
     HomeComponent,
     MobileNavComponent,
+    ModeToggleComponent,
 
    
     

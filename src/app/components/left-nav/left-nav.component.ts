@@ -6,7 +6,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
   styleUrls: ['./left-nav.component.scss']
 })
 export class LeftNavComponent implements OnInit  {
-  showFiller = false;
+ 
   isMobileView = true; 
   ngOnInit() {
     
