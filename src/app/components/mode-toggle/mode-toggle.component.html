@@ -11,7 +11,7 @@
 
   <div
     [ngClass]="{ 'bg-indigo-600': isToggled, 'bg-slate-900/10': !isToggled }"
-    (click)="toggle(); toggleDarkMode()"
+    (click)="toggleDarkMode()"
     class="mode-outline pointer-events-auto h-6 w-10 rounded-full p-1 ring-1 ring-inset transition duration-200 ease-in-out ring-black/20 cursor-pointer"
   >
     <div

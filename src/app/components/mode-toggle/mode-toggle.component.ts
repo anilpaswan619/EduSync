@@ -29,9 +29,8 @@ export class ModeToggleComponent {
       body.classList.add('dark');
       localStorage.setItem('theme', 'dark');
     }
-  }
-  
-  toggle() {
     this.isToggled = !this.isToggled;
   }
+  
+ 
 }
