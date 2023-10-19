@@ -1,4 +1,4 @@
-<div class="flex login-container-bg regular-text flex-col md:flex-row w-full">
+<div class="flex regular-text flex-col md:flex-row w-full">
   <div class="w-full md:w-64 h-screen text-white fixed top-0 left-0 md:block">
     <app-left-nav></app-left-nav>
   </div>
@@ -10,13 +10,13 @@
 
     <!-- Dashboard Content -->
     <div *ngIf="userRole === 'teacher'">
-      <header class="bg-white md:shadow-md shadow-indigo-200/50">
+      <header class="bg-white md:shadow-md shadow-indigo-200/50 sub-dark">
         <div class="mx-auto md:px-4 pt-6 sm:px-6 lg:px-8 mt-container">
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Card 1 -->
 
             <div
-              class="bg-white rounded-lg shadow-lg p-6 relative dashboard-card-hover border-t-2 border-t-gray-100 shadow-indigo-200/50"
+              class="sub-dark bg-white rounded-lg shadow-lg p-6 relative dashboard-card-hover border-t-2 border-t-gray-100 shadow-indigo-200/50"
             >
               <span
                 class="absolute top-0 right-0 w-20 p-4 dashboard-icon-width"
@@ -34,7 +34,7 @@
 
             <!-- Card 2 -->
             <div
-              class="bg-white rounded-lg shadow-lg p-6 relative dashboard-card-hover border-t-2 border-t-gray-100 shadow-indigo-200/50"
+              class="sub-dark bg-white rounded-lg shadow-lg p-6 relative dashboard-card-hover border-t-2 border-t-gray-100 shadow-indigo-200/50"
             >
               <span
                 class="absolute top-0 right-0 w-24 p-4 dashboard-icon-width"
@@ -52,7 +52,7 @@
 
             <!-- Card 3 -->
             <div
-              class="bg-white rounded-lg shadow-lg p-6 relative dashboard-card-hover border-t-2 border-t-gray-100 shadow-indigo-200/50"
+              class="sub-dark bg-white rounded-lg shadow-lg p-6 relative dashboard-card-hover border-t-2 border-t-gray-100 shadow-indigo-200/50"
             >
               <span
                 class="absolute top-0 right-0 w-20 p-4 dashboard-icon-width"
@@ -101,7 +101,7 @@
                       </th>
                     </tr>
                   </thead>
-                  <tbody class="bg-white divide-y divide-gray-100">
+                  <tbody class="bg-white divide-y divide-gray-100 sub-dark">
                     <tr>
                       <td class="flex items-center px-6 py-5 whitespace-nowrap">
                         <img src="assets/images/book.png" class="w-6 mr-2" />
@@ -226,7 +226,7 @@
             <div class="col-span-2 md:col-span-1">
               <p class="font-bold mb-6">Semester Progress</p>
               <div
-                class="w-full shadow-md rounded-lg px-4 py-8 border bg-white shadow-indigo-200/50"
+                class="w-full shadow-md rounded-lg px-4 py-8 border bg-white shadow-indigo-200/50 sub-dark"
               >
                 <div class="relative pt-1">
                   <div class="flex mb-5 items-center justify-between">
@@ -322,7 +322,7 @@
               <mat-card>
                 <mat-calendar
                   [(selected)]="selected"
-                  class="w-full border shadow-md rounded-lg shadow-indigo-200/50"
+                  class="w-full border shadow-md rounded-lg shadow-indigo-200/50 sub-dark"
                 ></mat-calendar>
               </mat-card>
               <div class="w-full">

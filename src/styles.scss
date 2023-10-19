@@ -330,7 +330,18 @@ a:hover {
   outline: auto;
 }
 .dark {
-  background-color: #1e293b;
+  background-color: rgb(30 41 59);
+}
+.dark .sub-dark {
+  background-color: rgb(30 41 59);
+  color: white;
+
+  h3,
+  h1,
+  li,
+  a {
+    color: white !important;
+  }
 }
 
 @media screen and (max-width: 767px) {
