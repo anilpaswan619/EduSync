@@ -343,6 +343,15 @@ a:hover {
     color: white !important;
   }
 }
+.dark .sub-dark .border-t-2 {
+  border-top-color: var(--primary-color) !important;
+}
+.dark .sub-dark .bg-gray-100 {
+  background-color: var(--primary-color) !important;
+}
+.dark .sub-dark .text-gray-500 {
+  color: white;
+}
 
 @media screen and (max-width: 767px) {
   .login-container-bg {
