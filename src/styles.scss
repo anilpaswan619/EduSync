@@ -339,7 +339,13 @@ a:hover {
   h3,
   h1,
   li,
-  a {
+  a,
+  .mat-calendar-body-cell-content,
+  .mat-calendar-body-label,
+  .mat-calendar-table-header th,
+  .mat-calendar-period-button,
+  .brand-name,
+  h2 span {
     color: white !important;
   }
 }
