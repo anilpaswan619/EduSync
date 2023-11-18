@@ -348,6 +348,10 @@ a:hover {
   h2 span {
     color: white !important;
   }
+
+  a:hover {
+    color: var(--primary-color) !important;
+  }
 }
 
 .dark .sub-dark .border-t-2 {
