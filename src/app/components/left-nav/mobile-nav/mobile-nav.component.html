@@ -1,6 +1,6 @@
 <div class="w-full">
   <div
-    class="shadow-lg bg-white z-10 flex justify-between items-center py-4 shadow-indigo-200/50"
+    class="shadow-lg bg-white z-10 flex justify-between items-center py-4 shadow-indigo-200/50 sub-dark"
   >
     <button type="button" mat-button (click)="drawer.toggle(); openNavHeight()">
       <img src="/assets/images/menu.png" alt="" class="w-5" />
@@ -34,12 +34,12 @@
   <!-- <mat-drawer-container class="example-container" autosize> -->
   <mat-drawer
     #drawer
-    class="example-sidenav shadow-lg shadow-indigo-200/50"
+    class="shadow-lg shadow-indigo-200/50"
     mode="side"
     id="openNav"
   >
-    <nav class="text-black-700 p-6 w-full pb-0 pl-0">
-      <ul class="space-y-4">
+    <nav class="text-black-700 p-6 w-full pb-0 pl-0 sub-dark">
+      <ul class="space-y-4 example-sidenav">
         <!-- Mobile menu items -->
         <li>
           <a
@@ -92,7 +92,7 @@
             Edit Info
           </a>
         </li>
-        <hr class="border-indigo-200" />
+
         <li>
           <a
             routerLink="/home"
@@ -105,6 +105,8 @@
             Logout</a
           >
         </li>
+        <hr class="border-indigo-200" />
+        <app-mode-toggle></app-mode-toggle>
       </ul>
     </nav>
   </mat-drawer>
