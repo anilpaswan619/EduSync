@@ -129,16 +129,12 @@ a:hover {
 }
 .login-container-bg {
   background-color: #c0acf52b;
-  border-bottom-left-radius: 1rem;
-  border-top-left-radius: 1rem;
 }
 .left-container-img {
   width: 100%;
   max-width: 450px;
 }
 .left-container-style {
-  border-top-right-radius: 2rem;
-  border-bottom-right-radius: 2rem;
   padding: 5rem;
   background-color: white;
   margin: 0;
@@ -374,9 +370,6 @@ a:hover {
 }
 
 @media screen and (max-width: 767px) {
-  .login-container-bg {
-    border-radius: 1rem;
-  }
   .left-container-style {
     border-radius: 0;
   }
