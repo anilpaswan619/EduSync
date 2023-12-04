@@ -309,6 +309,7 @@ a:hover {
 .calender-container {
   .mat-mdc-card {
     box-shadow: none !important;
+    border-radius: 10px;
   }
 }
 .header-style {
@@ -335,6 +336,7 @@ a:hover {
 .dark .sub-dark {
   background-color: rgb(30 41 59);
   color: white;
+  border-color: var(--primary-color);
 
   h3,
   h1,
@@ -351,6 +353,12 @@ a:hover {
 
   a:hover {
     color: var(--primary-color) !important;
+  }
+  .divide-y > :not([hidden]) ~ :not([hidden]) {
+    border-top-width: calc(0px * calc(1 - var(--tw-divide-y-reverse)));
+  }
+  .tbl-border-color {
+    border-color: var(--primary-color);
   }
 }
 
